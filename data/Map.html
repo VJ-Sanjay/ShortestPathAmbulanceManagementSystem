@@ -1,0 +1,3149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_752d1438c43faad51ca81aef9f410184 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_752d1438c43faad51ca81aef9f410184" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_752d1438c43faad51ca81aef9f410184 = L.map(
+                "map_752d1438c43faad51ca81aef9f410184",
+                {
+                    center: [10.661692943004194, 77.00608909852019],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5214ece64eddc7879949930c2102e4cc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_5214ece64eddc7879949930c2102e4cc.addTo(map_752d1438c43faad51ca81aef9f410184);
+        
+    
+            var tile_layer_9eb843b85f5d07023960f6909d8ffec4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9eb843b85f5d07023960f6909d8ffec4.addTo(map_752d1438c43faad51ca81aef9f410184);
+        
+    
+            var tile_layer_cedd26385475701d6bcd5a8212cd1ae5 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "CartoDB.DarkMatter", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            var tile_layer_b4a762e5edafcd171d4a31003d041c49 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}.png",
+                {"attribution": "Esri.WorldStreetMap", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            var feature_group_067d87d3aaa62fc0e598277fdddb1293 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_69a1db696fefad2ad6904390145fd83b = L.marker(
+                [10.659502, 77.000567],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_800bb8bf40d17467b6e25c6587d887a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_69a1db696fefad2ad6904390145fd83b.setIcon(icon_800bb8bf40d17467b6e25c6587d887a5);
+        
+    
+        var popup_d8e0583d01e9173a8677c449240fb94d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_61bbecd76fc1fb51b5021c19e062afbe = $(`<div id="html_61bbecd76fc1fb51b5021c19e062afbe" style="width: 100.0%; height: 100.0%;"><h3><center>SN Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_d8e0583d01e9173a8677c449240fb94d.setContent(html_61bbecd76fc1fb51b5021c19e062afbe);
+            
+        
+
+        marker_69a1db696fefad2ad6904390145fd83b.bindPopup(popup_d8e0583d01e9173a8677c449240fb94d)
+        ;
+
+        
+    
+    
+            var marker_8f502908840a89d00ccf6e94a0e33578 = L.marker(
+                [10.65948, 77.000535],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_e5bdd28cacd4dcdfd1e926ead687bb78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8f502908840a89d00ccf6e94a0e33578.setIcon(icon_e5bdd28cacd4dcdfd1e926ead687bb78);
+        
+    
+        var popup_6362b10fab8fdeda4e85a0389bd9349d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_793f2feeff56947c9626e83fcdc14886 = $(`<div id="html_793f2feeff56947c9626e83fcdc14886" style="width: 100.0%; height: 100.0%;"><h3><center>JP Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_6362b10fab8fdeda4e85a0389bd9349d.setContent(html_793f2feeff56947c9626e83fcdc14886);
+            
+        
+
+        marker_8f502908840a89d00ccf6e94a0e33578.bindPopup(popup_6362b10fab8fdeda4e85a0389bd9349d)
+        ;
+
+        
+    
+    
+            var marker_e9770178bc12c0f58614e6ff57618a42 = L.marker(
+                [10.658091, 77.009836],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_dacb344244e8dd3b31149a994daeb79f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e9770178bc12c0f58614e6ff57618a42.setIcon(icon_dacb344244e8dd3b31149a994daeb79f);
+        
+    
+        var popup_b55d95de61ae0ff37de300fa4f6546df = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6a1669aa25f55a04cbea5dbf7113b4a5 = $(`<div id="html_6a1669aa25f55a04cbea5dbf7113b4a5" style="width: 100.0%; height: 100.0%;"><h3><center>Government Head Quarters Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_b55d95de61ae0ff37de300fa4f6546df.setContent(html_6a1669aa25f55a04cbea5dbf7113b4a5);
+            
+        
+
+        marker_e9770178bc12c0f58614e6ff57618a42.bindPopup(popup_b55d95de61ae0ff37de300fa4f6546df)
+        ;
+
+        
+    
+    
+            var marker_71a9c12ef4e6028cfdb31fee2ab56b51 = L.marker(
+                [10.66277, 76.99958],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_b50b327a55b5a84e2a7457d7cf2ba6b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_71a9c12ef4e6028cfdb31fee2ab56b51.setIcon(icon_b50b327a55b5a84e2a7457d7cf2ba6b0);
+        
+    
+        var popup_150eef813e8e87c6de50a009d858e455 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_852d496423740c8d0a38ee4bfe9d9935 = $(`<div id="html_852d496423740c8d0a38ee4bfe9d9935" style="width: 100.0%; height: 100.0%;"><h3><center>Mcv Memorial Ent Trust Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_150eef813e8e87c6de50a009d858e455.setContent(html_852d496423740c8d0a38ee4bfe9d9935);
+            
+        
+
+        marker_71a9c12ef4e6028cfdb31fee2ab56b51.bindPopup(popup_150eef813e8e87c6de50a009d858e455)
+        ;
+
+        
+    
+    
+            var marker_50fc2fd80c92b8940b9e7b29e840424d = L.marker(
+                [10.657625, 77.011446],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_06f4e27b3dd00567760530c7d8bcc091 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_50fc2fd80c92b8940b9e7b29e840424d.setIcon(icon_06f4e27b3dd00567760530c7d8bcc091);
+        
+    
+        var popup_5c00090afc0e5a7e8aba2d1f50e6a97e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_604f775059a110ce861b03ffe4200a76 = $(`<div id="html_604f775059a110ce861b03ffe4200a76" style="width: 100.0%; height: 100.0%;"><h3><center>Pkd Nursing Home</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_5c00090afc0e5a7e8aba2d1f50e6a97e.setContent(html_604f775059a110ce861b03ffe4200a76);
+            
+        
+
+        marker_50fc2fd80c92b8940b9e7b29e840424d.bindPopup(popup_5c00090afc0e5a7e8aba2d1f50e6a97e)
+        ;
+
+        
+    
+    
+            var marker_70a33e58afb1b1a89cf984673fb9e5d1 = L.marker(
+                [10.662422, 77.00304],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_fb438f81f127c575d53243fca0f4ff84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_70a33e58afb1b1a89cf984673fb9e5d1.setIcon(icon_fb438f81f127c575d53243fca0f4ff84);
+        
+    
+        var popup_b670cfdb4f0ad0764f326f1d9e7ae2dd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bbcce8e9b1df6c1bc3a8678215c8bdfa = $(`<div id="html_bbcce8e9b1df6c1bc3a8678215c8bdfa" style="width: 100.0%; height: 100.0%;"><h3><center>AVM Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_b670cfdb4f0ad0764f326f1d9e7ae2dd.setContent(html_bbcce8e9b1df6c1bc3a8678215c8bdfa);
+            
+        
+
+        marker_70a33e58afb1b1a89cf984673fb9e5d1.bindPopup(popup_b670cfdb4f0ad0764f326f1d9e7ae2dd)
+        ;
+
+        
+    
+    
+            var marker_ad24b7728504b09c9b9f103fdabafd53 = L.marker(
+                [10.662538, 77.003431],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_73cd414624dd159cede0290a3b19a871 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ad24b7728504b09c9b9f103fdabafd53.setIcon(icon_73cd414624dd159cede0290a3b19a871);
+        
+    
+        var popup_1b8b7d9afe3246b23a9c311ff3032c3a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c7c2c9409a0a1c27ea078c42555b9566 = $(`<div id="html_c7c2c9409a0a1c27ea078c42555b9566" style="width: 100.0%; height: 100.0%;"><h3><center>K.M Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_1b8b7d9afe3246b23a9c311ff3032c3a.setContent(html_c7c2c9409a0a1c27ea078c42555b9566);
+            
+        
+
+        marker_ad24b7728504b09c9b9f103fdabafd53.bindPopup(popup_1b8b7d9afe3246b23a9c311ff3032c3a)
+        ;
+
+        
+    
+    
+            var marker_841a6d4d8799456a08335f8bafe59845 = L.marker(
+                [10.664762, 77.004966],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_677b7c2284fb68c1e48427b8073ebc64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_841a6d4d8799456a08335f8bafe59845.setIcon(icon_677b7c2284fb68c1e48427b8073ebc64);
+        
+    
+        var popup_1a158ba86ce2697e381626b4ad4aad34 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5ada2434193826c570e1e1d6068f956c = $(`<div id="html_5ada2434193826c570e1e1d6068f956c" style="width: 100.0%; height: 100.0%;"><h3><center>MRS Hospital & Fertility centre</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_1a158ba86ce2697e381626b4ad4aad34.setContent(html_5ada2434193826c570e1e1d6068f956c);
+            
+        
+
+        marker_841a6d4d8799456a08335f8bafe59845.bindPopup(popup_1a158ba86ce2697e381626b4ad4aad34)
+        ;
+
+        
+    
+    
+            var marker_a02c7d030f87f56747eaae87c782a881 = L.marker(
+                [10.665069, 77.005867],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_d43c65b79b989c0dcf6d3a48cc839eea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a02c7d030f87f56747eaae87c782a881.setIcon(icon_d43c65b79b989c0dcf6d3a48cc839eea);
+        
+    
+        var popup_e310ad308439b73474ecb6dcc25c2b88 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dd135bd77ebec4b67f82d3c562e7f364 = $(`<div id="html_dd135bd77ebec4b67f82d3c562e7f364" style="width: 100.0%; height: 100.0%;"><h3><center>Thirumalai Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_e310ad308439b73474ecb6dcc25c2b88.setContent(html_dd135bd77ebec4b67f82d3c562e7f364);
+            
+        
+
+        marker_a02c7d030f87f56747eaae87c782a881.bindPopup(popup_e310ad308439b73474ecb6dcc25c2b88)
+        ;
+
+        
+    
+    
+            var marker_9d6302b926728f56f8846968def07d1f = L.marker(
+                [10.668211, 77.007036],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_c9151641abdf665494f49d06ef533fca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9d6302b926728f56f8846968def07d1f.setIcon(icon_c9151641abdf665494f49d06ef533fca);
+        
+    
+        var popup_b2f0e0304dc73a6fccb3d026b3fcc178 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1ba4f1852aaf6bf4ca06b87a8bc5a9b1 = $(`<div id="html_1ba4f1852aaf6bf4ca06b87a8bc5a9b1" style="width: 100.0%; height: 100.0%;"><h3><center>Arathana Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_b2f0e0304dc73a6fccb3d026b3fcc178.setContent(html_1ba4f1852aaf6bf4ca06b87a8bc5a9b1);
+            
+        
+
+        marker_9d6302b926728f56f8846968def07d1f.bindPopup(popup_b2f0e0304dc73a6fccb3d026b3fcc178)
+        ;
+
+        
+    
+    
+            var marker_42501f6b456346b2e30904ae00fd6c09 = L.marker(
+                [10.670235, 77.007422],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_e658b71dd27597df539af18d68fc27dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_42501f6b456346b2e30904ae00fd6c09.setIcon(icon_e658b71dd27597df539af18d68fc27dc);
+        
+    
+        var popup_780c0869f5a97be3edc2af07b74248a6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d6cef9ee60366f1c504a23c2f336cc2c = $(`<div id="html_d6cef9ee60366f1c504a23c2f336cc2c" style="width: 100.0%; height: 100.0%;"><h3><center>KGM HOSPITAL</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_780c0869f5a97be3edc2af07b74248a6.setContent(html_d6cef9ee60366f1c504a23c2f336cc2c);
+            
+        
+
+        marker_42501f6b456346b2e30904ae00fd6c09.bindPopup(popup_780c0869f5a97be3edc2af07b74248a6)
+        ;
+
+        
+    
+    
+            var marker_77701f078b908880a2f73033a9843e59 = L.marker(
+                [10.662683, 77.009689],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_a336270fd987edb346883ae0d9b56f48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_77701f078b908880a2f73033a9843e59.setIcon(icon_a336270fd987edb346883ae0d9b56f48);
+        
+    
+        var popup_1f453a56004c1a746e3bfc64bc5ac8c3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a2eb8c04f97c9005e8ffef0c0dea9a3b = $(`<div id="html_a2eb8c04f97c9005e8ffef0c0dea9a3b" style="width: 100.0%; height: 100.0%;"><h3><center>Prabhu Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_1f453a56004c1a746e3bfc64bc5ac8c3.setContent(html_a2eb8c04f97c9005e8ffef0c0dea9a3b);
+            
+        
+
+        marker_77701f078b908880a2f73033a9843e59.bindPopup(popup_1f453a56004c1a746e3bfc64bc5ac8c3)
+        ;
+
+        
+    
+    
+            var marker_19d99871e223efeb1c27962f9667d433 = L.marker(
+                [10.662994, 77.010016],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_63bbba642d958a2e5485c0bda4ee23cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_19d99871e223efeb1c27962f9667d433.setIcon(icon_63bbba642d958a2e5485c0bda4ee23cc);
+        
+    
+        var popup_a490ce55219683543bf69e65356d0e9f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2f903d699c9511e5957b63de8b343a25 = $(`<div id="html_2f903d699c9511e5957b63de8b343a25" style="width: 100.0%; height: 100.0%;"><h3><center>Kowsalya Medical Centre</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_a490ce55219683543bf69e65356d0e9f.setContent(html_2f903d699c9511e5957b63de8b343a25);
+            
+        
+
+        marker_19d99871e223efeb1c27962f9667d433.bindPopup(popup_a490ce55219683543bf69e65356d0e9f)
+        ;
+
+        
+    
+    
+            var marker_d4c4cfb3f609a2a996dadba2a8e940e4 = L.marker(
+                [10.662933, 77.010601],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_3c1bdf24d6d6a447bca6148c7bea853b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d4c4cfb3f609a2a996dadba2a8e940e4.setIcon(icon_3c1bdf24d6d6a447bca6148c7bea853b);
+        
+    
+        var popup_748bc4b98b0828c33a3fb633f6f4016f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_edf94a96de8b525a6ecdd4b3e16eee51 = $(`<div id="html_edf94a96de8b525a6ecdd4b3e16eee51" style="width: 100.0%; height: 100.0%;"><h3><center>Sakthi Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_748bc4b98b0828c33a3fb633f6f4016f.setContent(html_edf94a96de8b525a6ecdd4b3e16eee51);
+            
+        
+
+        marker_d4c4cfb3f609a2a996dadba2a8e940e4.bindPopup(popup_748bc4b98b0828c33a3fb633f6f4016f)
+        ;
+
+        
+    
+    
+            var marker_4998bd68737d8dcc1195e446bb836d21 = L.marker(
+                [10.662759, 77.01228],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_96adf295d156cb9e2898c1ee6d8d7c2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4998bd68737d8dcc1195e446bb836d21.setIcon(icon_96adf295d156cb9e2898c1ee6d8d7c2b);
+        
+    
+        var popup_4e2cb0009b505563ed3421c14f60bab5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b21a749c8b8a777211e519b0ff1bd167 = $(`<div id="html_b21a749c8b8a777211e519b0ff1bd167" style="width: 100.0%; height: 100.0%;"><h3><center>Surya Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_4e2cb0009b505563ed3421c14f60bab5.setContent(html_b21a749c8b8a777211e519b0ff1bd167);
+            
+        
+
+        marker_4998bd68737d8dcc1195e446bb836d21.bindPopup(popup_4e2cb0009b505563ed3421c14f60bab5)
+        ;
+
+        
+    
+    
+            var marker_00c81bd52b3c53422411c9b34cf30e46 = L.marker(
+                [10.662295, 77.012529],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_3d615caaacadc885ff301ebd4a4e7d8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_00c81bd52b3c53422411c9b34cf30e46.setIcon(icon_3d615caaacadc885ff301ebd4a4e7d8b);
+        
+    
+        var popup_a9715a25d52f57e0c547ecafda789d12 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a4e0a9145ee6e50dee26227607ca05b0 = $(`<div id="html_a4e0a9145ee6e50dee26227607ca05b0" style="width: 100.0%; height: 100.0%;"><h3><center>Ar Ortho Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_a9715a25d52f57e0c547ecafda789d12.setContent(html_a4e0a9145ee6e50dee26227607ca05b0);
+            
+        
+
+        marker_00c81bd52b3c53422411c9b34cf30e46.bindPopup(popup_a9715a25d52f57e0c547ecafda789d12)
+        ;
+
+        
+    
+    
+            var marker_6022b47818ffb8ef55c58aca420946c6 = L.marker(
+                [10.662549, 77.012991],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_b7157c6ad72b6eb971df9a9ab377facd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6022b47818ffb8ef55c58aca420946c6.setIcon(icon_b7157c6ad72b6eb971df9a9ab377facd);
+        
+    
+        var popup_21fa9cc89e1f06577419f9cb3692fab6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3fbdb2b55afcaff2f0d48988ab5afbd7 = $(`<div id="html_3fbdb2b55afcaff2f0d48988ab5afbd7" style="width: 100.0%; height: 100.0%;"><h3><center>Arun Hospital - Multi-Speciality Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_21fa9cc89e1f06577419f9cb3692fab6.setContent(html_3fbdb2b55afcaff2f0d48988ab5afbd7);
+            
+        
+
+        marker_6022b47818ffb8ef55c58aca420946c6.bindPopup(popup_21fa9cc89e1f06577419f9cb3692fab6)
+        ;
+
+        
+    
+    
+            var marker_ce78ed01dff326c77b220f0a3d28720d = L.marker(
+                [10.663202, 77.015002],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_febd7781c917fcfe1db74ea3a898de17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ce78ed01dff326c77b220f0a3d28720d.setIcon(icon_febd7781c917fcfe1db74ea3a898de17);
+        
+    
+        var popup_26dffff1cc2a24881b5faf5fa065e62c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c85c0646e105f78df3b7d00a127e2cd6 = $(`<div id="html_c85c0646e105f78df3b7d00a127e2cd6" style="width: 100.0%; height: 100.0%;"><h3><center>Shanthi Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_26dffff1cc2a24881b5faf5fa065e62c.setContent(html_c85c0646e105f78df3b7d00a127e2cd6);
+            
+        
+
+        marker_ce78ed01dff326c77b220f0a3d28720d.bindPopup(popup_26dffff1cc2a24881b5faf5fa065e62c)
+        ;
+
+        
+    
+    
+            var marker_b5e453d5bc0f1dcc098f70456ac70c3d = L.marker(
+                [10.663307, 77.010094],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_fe2e5ffb1afdaae73aa5540110fe4980 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b5e453d5bc0f1dcc098f70456ac70c3d.setIcon(icon_fe2e5ffb1afdaae73aa5540110fe4980);
+        
+    
+        var popup_37bdda96b472e0f15404c28a2d1c98f8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6286e55d64ef487f6ce5afc45f59ca58 = $(`<div id="html_6286e55d64ef487f6ce5afc45f59ca58" style="width: 100.0%; height: 100.0%;"><h3><center>Siva Meds Multispeciality Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_37bdda96b472e0f15404c28a2d1c98f8.setContent(html_6286e55d64ef487f6ce5afc45f59ca58);
+            
+        
+
+        marker_b5e453d5bc0f1dcc098f70456ac70c3d.bindPopup(popup_37bdda96b472e0f15404c28a2d1c98f8)
+        ;
+
+        
+    
+    
+            var marker_3c7a7fab88db60d0b4e751b493d70219 = L.marker(
+                [10.664198, 77.010357],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_39113d4062f3121fea4231550a680cc0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3c7a7fab88db60d0b4e751b493d70219.setIcon(icon_39113d4062f3121fea4231550a680cc0);
+        
+    
+        var popup_41b4da9ecc0e2f401be04bd55a70f2af = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4779157d400e59db7b3ea6cf98d906b9 = $(`<div id="html_4779157d400e59db7b3ea6cf98d906b9" style="width: 100.0%; height: 100.0%;"><h3><center>Pills Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_41b4da9ecc0e2f401be04bd55a70f2af.setContent(html_4779157d400e59db7b3ea6cf98d906b9);
+            
+        
+
+        marker_3c7a7fab88db60d0b4e751b493d70219.bindPopup(popup_41b4da9ecc0e2f401be04bd55a70f2af)
+        ;
+
+        
+    
+    
+            var marker_1dbcd0a664ead02e33bf59669f83864d = L.marker(
+                [10.674253, 77.008098],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_fe90fed269b6b3b7b6740789ccadcb8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1dbcd0a664ead02e33bf59669f83864d.setIcon(icon_fe90fed269b6b3b7b6740789ccadcb8f);
+        
+    
+        var popup_8b9c60648ceddad84b80101b1848e5b3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3588f9dc5fca06e0c7f5c9b43e127b6d = $(`<div id="html_3588f9dc5fca06e0c7f5c9b43e127b6d" style="width: 100.0%; height: 100.0%;"><h3><center>The Pollachi Cardiac Center</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_8b9c60648ceddad84b80101b1848e5b3.setContent(html_3588f9dc5fca06e0c7f5c9b43e127b6d);
+            
+        
+
+        marker_1dbcd0a664ead02e33bf59669f83864d.bindPopup(popup_8b9c60648ceddad84b80101b1848e5b3)
+        ;
+
+        
+    
+    
+            var marker_632fa421e32c92316b85aeb1cc4bc51b = L.marker(
+                [10.659502, 77.000567],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_02552b76948c03aa36b8a416e757e5c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_632fa421e32c92316b85aeb1cc4bc51b.setIcon(icon_02552b76948c03aa36b8a416e757e5c9);
+        
+    
+        var popup_9d98cc28c93ba3f5e5f9b426d4caa01a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d3a814b8a5d8b132e6b1c5039ed0f168 = $(`<div id="html_d3a814b8a5d8b132e6b1c5039ed0f168" style="width: 100.0%; height: 100.0%;"><h3><center>SN Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_9d98cc28c93ba3f5e5f9b426d4caa01a.setContent(html_d3a814b8a5d8b132e6b1c5039ed0f168);
+            
+        
+
+        marker_632fa421e32c92316b85aeb1cc4bc51b.bindPopup(popup_9d98cc28c93ba3f5e5f9b426d4caa01a)
+        ;
+
+        
+    
+    
+            var marker_42c0febb990edbd7770a1f0e8ee64960 = L.marker(
+                [10.65948, 77.000535],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_ec8b535156c137498fc96b02c8d682e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_42c0febb990edbd7770a1f0e8ee64960.setIcon(icon_ec8b535156c137498fc96b02c8d682e3);
+        
+    
+        var popup_70d1c671e926c0f0ad170b8d5569e148 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b07309961e65191055cbc7a9c5d6d16b = $(`<div id="html_b07309961e65191055cbc7a9c5d6d16b" style="width: 100.0%; height: 100.0%;"><h3><center>JP Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_70d1c671e926c0f0ad170b8d5569e148.setContent(html_b07309961e65191055cbc7a9c5d6d16b);
+            
+        
+
+        marker_42c0febb990edbd7770a1f0e8ee64960.bindPopup(popup_70d1c671e926c0f0ad170b8d5569e148)
+        ;
+
+        
+    
+    
+            var marker_a6cc8fdb437e629ec2585e7ee72ce0c9 = L.marker(
+                [10.658091, 77.009836],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_812730a8136ff1270485015e91defef7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a6cc8fdb437e629ec2585e7ee72ce0c9.setIcon(icon_812730a8136ff1270485015e91defef7);
+        
+    
+        var popup_8d7f3b285a00d70c4d5ee3f84687e18c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0a20e0590945063ac6bcc7d3df7a2406 = $(`<div id="html_0a20e0590945063ac6bcc7d3df7a2406" style="width: 100.0%; height: 100.0%;"><h3><center>Government Head Quarters Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_8d7f3b285a00d70c4d5ee3f84687e18c.setContent(html_0a20e0590945063ac6bcc7d3df7a2406);
+            
+        
+
+        marker_a6cc8fdb437e629ec2585e7ee72ce0c9.bindPopup(popup_8d7f3b285a00d70c4d5ee3f84687e18c)
+        ;
+
+        
+    
+    
+            var marker_5fdf62d5567ef17654a2686905c857d5 = L.marker(
+                [10.66277, 76.99958],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_27a5d5a7ea2c14ac6c8489979f7da495 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5fdf62d5567ef17654a2686905c857d5.setIcon(icon_27a5d5a7ea2c14ac6c8489979f7da495);
+        
+    
+        var popup_d0c65287d363dbbdbbf2e1cba5f71b24 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2b5dc6b6bdab75140c8d9da6f1128c4c = $(`<div id="html_2b5dc6b6bdab75140c8d9da6f1128c4c" style="width: 100.0%; height: 100.0%;"><h3><center>Mcv Memorial Ent Trust Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_d0c65287d363dbbdbbf2e1cba5f71b24.setContent(html_2b5dc6b6bdab75140c8d9da6f1128c4c);
+            
+        
+
+        marker_5fdf62d5567ef17654a2686905c857d5.bindPopup(popup_d0c65287d363dbbdbbf2e1cba5f71b24)
+        ;
+
+        
+    
+    
+            var marker_579700b28961c383ed5da71f60c47382 = L.marker(
+                [10.657625, 77.011446],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_4523d7eb026ad055c9e79bbd428ae942 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_579700b28961c383ed5da71f60c47382.setIcon(icon_4523d7eb026ad055c9e79bbd428ae942);
+        
+    
+        var popup_38d1f0691a4d7c0339b057b9ccc094b2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e9dc17567a7357cae786207dbaa6686e = $(`<div id="html_e9dc17567a7357cae786207dbaa6686e" style="width: 100.0%; height: 100.0%;"><h3><center>Pkd Nursing Home</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_38d1f0691a4d7c0339b057b9ccc094b2.setContent(html_e9dc17567a7357cae786207dbaa6686e);
+            
+        
+
+        marker_579700b28961c383ed5da71f60c47382.bindPopup(popup_38d1f0691a4d7c0339b057b9ccc094b2)
+        ;
+
+        
+    
+    
+            var marker_8136f321b0a8b4624ce3bf6539723a3a = L.marker(
+                [10.662422, 77.00304],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_4e40a18834f1588395d459a28aea882c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8136f321b0a8b4624ce3bf6539723a3a.setIcon(icon_4e40a18834f1588395d459a28aea882c);
+        
+    
+        var popup_326dee53840e62e0b81d92b7c6025036 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a135b1d9e2c6de31305b5ad466b220ba = $(`<div id="html_a135b1d9e2c6de31305b5ad466b220ba" style="width: 100.0%; height: 100.0%;"><h3><center>AVM Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_326dee53840e62e0b81d92b7c6025036.setContent(html_a135b1d9e2c6de31305b5ad466b220ba);
+            
+        
+
+        marker_8136f321b0a8b4624ce3bf6539723a3a.bindPopup(popup_326dee53840e62e0b81d92b7c6025036)
+        ;
+
+        
+    
+    
+            var marker_1c8d5d2fe73e66479e918f2b2bbd338e = L.marker(
+                [10.662538, 77.003431],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_613566a65b066d3b5d200e773117373f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1c8d5d2fe73e66479e918f2b2bbd338e.setIcon(icon_613566a65b066d3b5d200e773117373f);
+        
+    
+        var popup_4741007b4231e6567f8d88e4c8685bbd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_788dc143f1b91edc09a52a7f2e920133 = $(`<div id="html_788dc143f1b91edc09a52a7f2e920133" style="width: 100.0%; height: 100.0%;"><h3><center>K.M Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_4741007b4231e6567f8d88e4c8685bbd.setContent(html_788dc143f1b91edc09a52a7f2e920133);
+            
+        
+
+        marker_1c8d5d2fe73e66479e918f2b2bbd338e.bindPopup(popup_4741007b4231e6567f8d88e4c8685bbd)
+        ;
+
+        
+    
+    
+            var marker_a7c2daf11f875b3c25753ecf50487e86 = L.marker(
+                [10.664762, 77.004966],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_fad60580ab9becf7028d3a70c8708e89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a7c2daf11f875b3c25753ecf50487e86.setIcon(icon_fad60580ab9becf7028d3a70c8708e89);
+        
+    
+        var popup_fbbc97367624e657a10a27e5a819217c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_25e3a41aa8b5c2df8a8c4912feea7718 = $(`<div id="html_25e3a41aa8b5c2df8a8c4912feea7718" style="width: 100.0%; height: 100.0%;"><h3><center>MRS Hospital & Fertility centre</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_fbbc97367624e657a10a27e5a819217c.setContent(html_25e3a41aa8b5c2df8a8c4912feea7718);
+            
+        
+
+        marker_a7c2daf11f875b3c25753ecf50487e86.bindPopup(popup_fbbc97367624e657a10a27e5a819217c)
+        ;
+
+        
+    
+    
+            var marker_5e441fd19d5bd5ac6bf69a8cbc08c6f3 = L.marker(
+                [10.665069, 77.005867],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_12d1e3cc4fa277b894816fe85e6fa5d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5e441fd19d5bd5ac6bf69a8cbc08c6f3.setIcon(icon_12d1e3cc4fa277b894816fe85e6fa5d1);
+        
+    
+        var popup_7a59e10008a0b0309c7d20a2a948e476 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3a8641c56da87f138d1dae440727ea47 = $(`<div id="html_3a8641c56da87f138d1dae440727ea47" style="width: 100.0%; height: 100.0%;"><h3><center>Thirumalai Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_7a59e10008a0b0309c7d20a2a948e476.setContent(html_3a8641c56da87f138d1dae440727ea47);
+            
+        
+
+        marker_5e441fd19d5bd5ac6bf69a8cbc08c6f3.bindPopup(popup_7a59e10008a0b0309c7d20a2a948e476)
+        ;
+
+        
+    
+    
+            var marker_276e6561e0c26e820408788a213ce8b3 = L.marker(
+                [10.668211, 77.007036],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_5c50d2bb1b00ce017a282c028d8ee991 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_276e6561e0c26e820408788a213ce8b3.setIcon(icon_5c50d2bb1b00ce017a282c028d8ee991);
+        
+    
+        var popup_5e58ad18e5e2218109daf7f36944a627 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_12a5bcd9f7759ce45d465de2468a93ec = $(`<div id="html_12a5bcd9f7759ce45d465de2468a93ec" style="width: 100.0%; height: 100.0%;"><h3><center>Arathana Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_5e58ad18e5e2218109daf7f36944a627.setContent(html_12a5bcd9f7759ce45d465de2468a93ec);
+            
+        
+
+        marker_276e6561e0c26e820408788a213ce8b3.bindPopup(popup_5e58ad18e5e2218109daf7f36944a627)
+        ;
+
+        
+    
+    
+            var marker_953c0bbce56f7564381c9c08cf66a636 = L.marker(
+                [10.670235, 77.007422],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_6a9fb1690ca2c435d638016857fc779d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_953c0bbce56f7564381c9c08cf66a636.setIcon(icon_6a9fb1690ca2c435d638016857fc779d);
+        
+    
+        var popup_925b5b1373cde20972b81e39153ac12d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bb9af9ebc7c2366d61dcb5db0a26ee8c = $(`<div id="html_bb9af9ebc7c2366d61dcb5db0a26ee8c" style="width: 100.0%; height: 100.0%;"><h3><center>KGM HOSPITAL</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_925b5b1373cde20972b81e39153ac12d.setContent(html_bb9af9ebc7c2366d61dcb5db0a26ee8c);
+            
+        
+
+        marker_953c0bbce56f7564381c9c08cf66a636.bindPopup(popup_925b5b1373cde20972b81e39153ac12d)
+        ;
+
+        
+    
+    
+            var marker_3bda5c0f73c67650bbe844c0063d9842 = L.marker(
+                [10.662683, 77.009689],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_576aeb3917619ebccb1db8a75c3f767a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3bda5c0f73c67650bbe844c0063d9842.setIcon(icon_576aeb3917619ebccb1db8a75c3f767a);
+        
+    
+        var popup_6c636612c1209641abc65f63a4ecf9af = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dcc54fa51c4cb6ff05b7bb685564195d = $(`<div id="html_dcc54fa51c4cb6ff05b7bb685564195d" style="width: 100.0%; height: 100.0%;"><h3><center>Prabhu Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_6c636612c1209641abc65f63a4ecf9af.setContent(html_dcc54fa51c4cb6ff05b7bb685564195d);
+            
+        
+
+        marker_3bda5c0f73c67650bbe844c0063d9842.bindPopup(popup_6c636612c1209641abc65f63a4ecf9af)
+        ;
+
+        
+    
+    
+            var marker_a3ed8c0cd85d07fae6053f80cf3fb91c = L.marker(
+                [10.662994, 77.010016],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_3eed004b354207de20016d4ae948a33f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a3ed8c0cd85d07fae6053f80cf3fb91c.setIcon(icon_3eed004b354207de20016d4ae948a33f);
+        
+    
+        var popup_ddfc932e001d5e8bb6bd96e139b696f2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_39016619bd9857f171e4633c6dea1760 = $(`<div id="html_39016619bd9857f171e4633c6dea1760" style="width: 100.0%; height: 100.0%;"><h3><center>Kowsalya Medical Centre</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_ddfc932e001d5e8bb6bd96e139b696f2.setContent(html_39016619bd9857f171e4633c6dea1760);
+            
+        
+
+        marker_a3ed8c0cd85d07fae6053f80cf3fb91c.bindPopup(popup_ddfc932e001d5e8bb6bd96e139b696f2)
+        ;
+
+        
+    
+    
+            var marker_516e66da42c4de0c19d144dd7e448300 = L.marker(
+                [10.662933, 77.010601],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_d50e70d8e8200e6ecf641afaa788592e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_516e66da42c4de0c19d144dd7e448300.setIcon(icon_d50e70d8e8200e6ecf641afaa788592e);
+        
+    
+        var popup_c3998430f1fff89b17a18d24a568bb86 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1a736f567cca975f94153943400ba623 = $(`<div id="html_1a736f567cca975f94153943400ba623" style="width: 100.0%; height: 100.0%;"><h3><center>Sakthi Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_c3998430f1fff89b17a18d24a568bb86.setContent(html_1a736f567cca975f94153943400ba623);
+            
+        
+
+        marker_516e66da42c4de0c19d144dd7e448300.bindPopup(popup_c3998430f1fff89b17a18d24a568bb86)
+        ;
+
+        
+    
+    
+            var marker_211bec9efe68c230603be8bc6854b538 = L.marker(
+                [10.662759, 77.01228],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_3dd3db5f9655070f4bd31774e6c9c2d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_211bec9efe68c230603be8bc6854b538.setIcon(icon_3dd3db5f9655070f4bd31774e6c9c2d7);
+        
+    
+        var popup_17feb67accb3e0c0bf120cccdff83ce3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bf9db5057ae92f854abf0e3ebbdda37a = $(`<div id="html_bf9db5057ae92f854abf0e3ebbdda37a" style="width: 100.0%; height: 100.0%;"><h3><center>Surya Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_17feb67accb3e0c0bf120cccdff83ce3.setContent(html_bf9db5057ae92f854abf0e3ebbdda37a);
+            
+        
+
+        marker_211bec9efe68c230603be8bc6854b538.bindPopup(popup_17feb67accb3e0c0bf120cccdff83ce3)
+        ;
+
+        
+    
+    
+            var marker_d6d77e73d8a16bf13be531b49ad65af4 = L.marker(
+                [10.662295, 77.012529],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_b728773b285ad2a42da94e8c015e2661 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d6d77e73d8a16bf13be531b49ad65af4.setIcon(icon_b728773b285ad2a42da94e8c015e2661);
+        
+    
+        var popup_a1092a83b812ee46814ed65d2bae3b18 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_afe6d48dbc1cf9dd80743261e9f3204c = $(`<div id="html_afe6d48dbc1cf9dd80743261e9f3204c" style="width: 100.0%; height: 100.0%;"><h3><center>Ar Ortho Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_a1092a83b812ee46814ed65d2bae3b18.setContent(html_afe6d48dbc1cf9dd80743261e9f3204c);
+            
+        
+
+        marker_d6d77e73d8a16bf13be531b49ad65af4.bindPopup(popup_a1092a83b812ee46814ed65d2bae3b18)
+        ;
+
+        
+    
+    
+            var marker_5c3c529f0e380d2298f8c1fb98d23731 = L.marker(
+                [10.662549, 77.012991],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_1fe7188ee4ed9ad46ba0ca880f291ed5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5c3c529f0e380d2298f8c1fb98d23731.setIcon(icon_1fe7188ee4ed9ad46ba0ca880f291ed5);
+        
+    
+        var popup_d95a3ac64365a68a42d6eac3bdea124b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1e6cacf9ebc55fa28684903f524829eb = $(`<div id="html_1e6cacf9ebc55fa28684903f524829eb" style="width: 100.0%; height: 100.0%;"><h3><center>Arun Hospital - Multi-Speciality Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_d95a3ac64365a68a42d6eac3bdea124b.setContent(html_1e6cacf9ebc55fa28684903f524829eb);
+            
+        
+
+        marker_5c3c529f0e380d2298f8c1fb98d23731.bindPopup(popup_d95a3ac64365a68a42d6eac3bdea124b)
+        ;
+
+        
+    
+    
+            var marker_8fc0ee6a55befef708e8ffb9d69849c4 = L.marker(
+                [10.663202, 77.015002],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_67b7c8fc063598b4c652777ec8409755 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8fc0ee6a55befef708e8ffb9d69849c4.setIcon(icon_67b7c8fc063598b4c652777ec8409755);
+        
+    
+        var popup_d35569ad992545752c59e641dc917a88 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_20df628a00027291414a79ae14ee3563 = $(`<div id="html_20df628a00027291414a79ae14ee3563" style="width: 100.0%; height: 100.0%;"><h3><center>Shanthi Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_d35569ad992545752c59e641dc917a88.setContent(html_20df628a00027291414a79ae14ee3563);
+            
+        
+
+        marker_8fc0ee6a55befef708e8ffb9d69849c4.bindPopup(popup_d35569ad992545752c59e641dc917a88)
+        ;
+
+        
+    
+    
+            var marker_a5ea77429f36fc17058ea9036e372e56 = L.marker(
+                [10.663307, 77.010094],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_e853eadc4ca1a58efe31a3065d55b3a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a5ea77429f36fc17058ea9036e372e56.setIcon(icon_e853eadc4ca1a58efe31a3065d55b3a4);
+        
+    
+        var popup_727af92f90d4de6230e09e6666d7490f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_33ff94846adc5f0af42e34f71ac203be = $(`<div id="html_33ff94846adc5f0af42e34f71ac203be" style="width: 100.0%; height: 100.0%;"><h3><center>Siva Meds Multispeciality Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_727af92f90d4de6230e09e6666d7490f.setContent(html_33ff94846adc5f0af42e34f71ac203be);
+            
+        
+
+        marker_a5ea77429f36fc17058ea9036e372e56.bindPopup(popup_727af92f90d4de6230e09e6666d7490f)
+        ;
+
+        
+    
+    
+            var marker_90569875afb0e0ed9f4135d3b20ed43d = L.marker(
+                [10.664198, 77.010357],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_48613bfd73dba4bb0847b6c26f7fd313 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_90569875afb0e0ed9f4135d3b20ed43d.setIcon(icon_48613bfd73dba4bb0847b6c26f7fd313);
+        
+    
+        var popup_0f60c6001cfccfe3b7b2bbd9ccf76b27 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4885b90b52d4f4cf30e5aba722ce131c = $(`<div id="html_4885b90b52d4f4cf30e5aba722ce131c" style="width: 100.0%; height: 100.0%;"><h3><center>Pills Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_0f60c6001cfccfe3b7b2bbd9ccf76b27.setContent(html_4885b90b52d4f4cf30e5aba722ce131c);
+            
+        
+
+        marker_90569875afb0e0ed9f4135d3b20ed43d.bindPopup(popup_0f60c6001cfccfe3b7b2bbd9ccf76b27)
+        ;
+
+        
+    
+    
+            var marker_9f30bb93d6bfb194c47e56bb06cd3dab = L.marker(
+                [10.674253, 77.008098],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_88bfc61d9e1ce0fc9383e17fd5109197 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9f30bb93d6bfb194c47e56bb06cd3dab.setIcon(icon_88bfc61d9e1ce0fc9383e17fd5109197);
+        
+    
+        var popup_8fbfb6b595ff1e47afbfd04a1406aa36 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b9f59b3c1a66fc21e7ba4c57b1eaf0ef = $(`<div id="html_b9f59b3c1a66fc21e7ba4c57b1eaf0ef" style="width: 100.0%; height: 100.0%;"><h3><center>The Pollachi Cardiac Center</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_8fbfb6b595ff1e47afbfd04a1406aa36.setContent(html_b9f59b3c1a66fc21e7ba4c57b1eaf0ef);
+            
+        
+
+        marker_9f30bb93d6bfb194c47e56bb06cd3dab.bindPopup(popup_8fbfb6b595ff1e47afbfd04a1406aa36)
+        ;
+
+        
+    
+    
+            var marker_28e1e74d8b9eeb4185906bf79f593404 = L.marker(
+                [10.659502, 77.000567],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_286ecf2e726b7e99287f017022e3aad6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_28e1e74d8b9eeb4185906bf79f593404.setIcon(icon_286ecf2e726b7e99287f017022e3aad6);
+        
+    
+        var popup_0bc729726eef4afdd9441cd4d6568398 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ccc03d5a93abb30f854b134d41191f27 = $(`<div id="html_ccc03d5a93abb30f854b134d41191f27" style="width: 100.0%; height: 100.0%;"><h3><center>SN Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_0bc729726eef4afdd9441cd4d6568398.setContent(html_ccc03d5a93abb30f854b134d41191f27);
+            
+        
+
+        marker_28e1e74d8b9eeb4185906bf79f593404.bindPopup(popup_0bc729726eef4afdd9441cd4d6568398)
+        ;
+
+        
+    
+    
+            var marker_a9af1824bc1a5342881b5eaaaf112df6 = L.marker(
+                [10.65948, 77.000535],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_1261ab6090df5904769b487a038626cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a9af1824bc1a5342881b5eaaaf112df6.setIcon(icon_1261ab6090df5904769b487a038626cb);
+        
+    
+        var popup_f321ca44519b1785236907d101cdae1a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_153ae9c98b5d06f45a02939e04874a2a = $(`<div id="html_153ae9c98b5d06f45a02939e04874a2a" style="width: 100.0%; height: 100.0%;"><h3><center>JP Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_f321ca44519b1785236907d101cdae1a.setContent(html_153ae9c98b5d06f45a02939e04874a2a);
+            
+        
+
+        marker_a9af1824bc1a5342881b5eaaaf112df6.bindPopup(popup_f321ca44519b1785236907d101cdae1a)
+        ;
+
+        
+    
+    
+            var marker_66db7ed1ff7d46a40340d8acab035a98 = L.marker(
+                [10.658091, 77.009836],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_e0093340b1506f914312a054f52cd4b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_66db7ed1ff7d46a40340d8acab035a98.setIcon(icon_e0093340b1506f914312a054f52cd4b3);
+        
+    
+        var popup_878706433aa3bb59b6b8038eff8f96e3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0289fbcfe1de44f4edc6b1d8974d0402 = $(`<div id="html_0289fbcfe1de44f4edc6b1d8974d0402" style="width: 100.0%; height: 100.0%;"><h3><center>Government Head Quarters Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_878706433aa3bb59b6b8038eff8f96e3.setContent(html_0289fbcfe1de44f4edc6b1d8974d0402);
+            
+        
+
+        marker_66db7ed1ff7d46a40340d8acab035a98.bindPopup(popup_878706433aa3bb59b6b8038eff8f96e3)
+        ;
+
+        
+    
+    
+            var marker_e675bc28ef5708cdd9e7dada13118694 = L.marker(
+                [10.66277, 76.99958],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_85be31f2fd296f6d5cd3dc346c0345f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e675bc28ef5708cdd9e7dada13118694.setIcon(icon_85be31f2fd296f6d5cd3dc346c0345f6);
+        
+    
+        var popup_3d2af9f49e69dbe262fb41dd7c575d73 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3279dff9bc3ffa26ab9525bb2b50af7e = $(`<div id="html_3279dff9bc3ffa26ab9525bb2b50af7e" style="width: 100.0%; height: 100.0%;"><h3><center>Mcv Memorial Ent Trust Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_3d2af9f49e69dbe262fb41dd7c575d73.setContent(html_3279dff9bc3ffa26ab9525bb2b50af7e);
+            
+        
+
+        marker_e675bc28ef5708cdd9e7dada13118694.bindPopup(popup_3d2af9f49e69dbe262fb41dd7c575d73)
+        ;
+
+        
+    
+    
+            var marker_6fad88252a3d5f35154a7848e7e09552 = L.marker(
+                [10.657625, 77.011446],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_bb2888a9e438f6af531fd1a2a039b737 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6fad88252a3d5f35154a7848e7e09552.setIcon(icon_bb2888a9e438f6af531fd1a2a039b737);
+        
+    
+        var popup_367f635cda57d2c54ec781d3fd6857e7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_19dc5a5fd49c33e28e3073fd6538c46f = $(`<div id="html_19dc5a5fd49c33e28e3073fd6538c46f" style="width: 100.0%; height: 100.0%;"><h3><center>Pkd Nursing Home</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_367f635cda57d2c54ec781d3fd6857e7.setContent(html_19dc5a5fd49c33e28e3073fd6538c46f);
+            
+        
+
+        marker_6fad88252a3d5f35154a7848e7e09552.bindPopup(popup_367f635cda57d2c54ec781d3fd6857e7)
+        ;
+
+        
+    
+    
+            var marker_a91c298423264ca23dc017b08af0452f = L.marker(
+                [10.662422, 77.00304],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_c7ebdff2a375c1983f33cecfc4d68132 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a91c298423264ca23dc017b08af0452f.setIcon(icon_c7ebdff2a375c1983f33cecfc4d68132);
+        
+    
+        var popup_d922d6ac21a728cdbf04930a2ba3c686 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_091741fc938c17ffbcbaa30cb8594292 = $(`<div id="html_091741fc938c17ffbcbaa30cb8594292" style="width: 100.0%; height: 100.0%;"><h3><center>AVM Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_d922d6ac21a728cdbf04930a2ba3c686.setContent(html_091741fc938c17ffbcbaa30cb8594292);
+            
+        
+
+        marker_a91c298423264ca23dc017b08af0452f.bindPopup(popup_d922d6ac21a728cdbf04930a2ba3c686)
+        ;
+
+        
+    
+    
+            var marker_65658b1432d120f1aebab774bd6ff617 = L.marker(
+                [10.662538, 77.003431],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_28383bbfdab156aa460f2f1127349bab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_65658b1432d120f1aebab774bd6ff617.setIcon(icon_28383bbfdab156aa460f2f1127349bab);
+        
+    
+        var popup_994ff1dd8f2e0c7cb5d7a69914a557db = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_22e2a3d384d451aace9b1c519f1209e7 = $(`<div id="html_22e2a3d384d451aace9b1c519f1209e7" style="width: 100.0%; height: 100.0%;"><h3><center>K.M Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_994ff1dd8f2e0c7cb5d7a69914a557db.setContent(html_22e2a3d384d451aace9b1c519f1209e7);
+            
+        
+
+        marker_65658b1432d120f1aebab774bd6ff617.bindPopup(popup_994ff1dd8f2e0c7cb5d7a69914a557db)
+        ;
+
+        
+    
+    
+            var marker_4dff4246e5c72efbe22a2dee07a88f8e = L.marker(
+                [10.664762, 77.004966],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_79a8fc7e1e0d8cbaa920af4fdbc7eaee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4dff4246e5c72efbe22a2dee07a88f8e.setIcon(icon_79a8fc7e1e0d8cbaa920af4fdbc7eaee);
+        
+    
+        var popup_6352cf67d20509ab435e8fa03e5f9d13 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1c25fd9cb0a56315aeebece55d84178d = $(`<div id="html_1c25fd9cb0a56315aeebece55d84178d" style="width: 100.0%; height: 100.0%;"><h3><center>MRS Hospital & Fertility centre</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_6352cf67d20509ab435e8fa03e5f9d13.setContent(html_1c25fd9cb0a56315aeebece55d84178d);
+            
+        
+
+        marker_4dff4246e5c72efbe22a2dee07a88f8e.bindPopup(popup_6352cf67d20509ab435e8fa03e5f9d13)
+        ;
+
+        
+    
+    
+            var marker_d7fb6e2ff875b475c549bfa1b2c7c808 = L.marker(
+                [10.665069, 77.005867],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_9f9ada6eccc93de0fea6364f1fd0941d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d7fb6e2ff875b475c549bfa1b2c7c808.setIcon(icon_9f9ada6eccc93de0fea6364f1fd0941d);
+        
+    
+        var popup_90dd114fc65887e258b1558001176e25 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2c2530a4277fa2ac44708493fe57fb9d = $(`<div id="html_2c2530a4277fa2ac44708493fe57fb9d" style="width: 100.0%; height: 100.0%;"><h3><center>Thirumalai Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_90dd114fc65887e258b1558001176e25.setContent(html_2c2530a4277fa2ac44708493fe57fb9d);
+            
+        
+
+        marker_d7fb6e2ff875b475c549bfa1b2c7c808.bindPopup(popup_90dd114fc65887e258b1558001176e25)
+        ;
+
+        
+    
+    
+            var marker_2adabb7ac5551d367a0ce44e61f468b7 = L.marker(
+                [10.668211, 77.007036],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_485d43a34a07c2ee4cf1e49dc0293b94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2adabb7ac5551d367a0ce44e61f468b7.setIcon(icon_485d43a34a07c2ee4cf1e49dc0293b94);
+        
+    
+        var popup_3ed9b719f260765d5fe92d55b7ceef01 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9b7771c77e69305b2b1f51ccf457395b = $(`<div id="html_9b7771c77e69305b2b1f51ccf457395b" style="width: 100.0%; height: 100.0%;"><h3><center>Arathana Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_3ed9b719f260765d5fe92d55b7ceef01.setContent(html_9b7771c77e69305b2b1f51ccf457395b);
+            
+        
+
+        marker_2adabb7ac5551d367a0ce44e61f468b7.bindPopup(popup_3ed9b719f260765d5fe92d55b7ceef01)
+        ;
+
+        
+    
+    
+            var marker_47606b1c20f9098fbb1a59b6e9a8c603 = L.marker(
+                [10.670235, 77.007422],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_384dcb18e035cdeda5ad03ee37a9e79c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_47606b1c20f9098fbb1a59b6e9a8c603.setIcon(icon_384dcb18e035cdeda5ad03ee37a9e79c);
+        
+    
+        var popup_2d93ee464c646d954d7fc3ecd9ea849d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8d1fdf4e6f052a8468d185da9701ade5 = $(`<div id="html_8d1fdf4e6f052a8468d185da9701ade5" style="width: 100.0%; height: 100.0%;"><h3><center>KGM HOSPITAL</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_2d93ee464c646d954d7fc3ecd9ea849d.setContent(html_8d1fdf4e6f052a8468d185da9701ade5);
+            
+        
+
+        marker_47606b1c20f9098fbb1a59b6e9a8c603.bindPopup(popup_2d93ee464c646d954d7fc3ecd9ea849d)
+        ;
+
+        
+    
+    
+            var marker_da5f11e3178a0c22326552094acb8645 = L.marker(
+                [10.662683, 77.009689],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_3572dd8508871e1d0bd66ef3b3ea6955 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_da5f11e3178a0c22326552094acb8645.setIcon(icon_3572dd8508871e1d0bd66ef3b3ea6955);
+        
+    
+        var popup_47cf7306c697d0be81ace0a899e2f95e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_60e3187ad36cd52f87c6bf3d5d13fbaa = $(`<div id="html_60e3187ad36cd52f87c6bf3d5d13fbaa" style="width: 100.0%; height: 100.0%;"><h3><center>Prabhu Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_47cf7306c697d0be81ace0a899e2f95e.setContent(html_60e3187ad36cd52f87c6bf3d5d13fbaa);
+            
+        
+
+        marker_da5f11e3178a0c22326552094acb8645.bindPopup(popup_47cf7306c697d0be81ace0a899e2f95e)
+        ;
+
+        
+    
+    
+            var marker_a4ca12ac6081c3443fd9aa1132145a4f = L.marker(
+                [10.662994, 77.010016],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_d5022449a04ba6fedb677b09d81feb0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a4ca12ac6081c3443fd9aa1132145a4f.setIcon(icon_d5022449a04ba6fedb677b09d81feb0c);
+        
+    
+        var popup_4c459e0da2e8e175535c522bec8b0033 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_08db5506d9ff005ef1e40aba9626769a = $(`<div id="html_08db5506d9ff005ef1e40aba9626769a" style="width: 100.0%; height: 100.0%;"><h3><center>Kowsalya Medical Centre</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_4c459e0da2e8e175535c522bec8b0033.setContent(html_08db5506d9ff005ef1e40aba9626769a);
+            
+        
+
+        marker_a4ca12ac6081c3443fd9aa1132145a4f.bindPopup(popup_4c459e0da2e8e175535c522bec8b0033)
+        ;
+
+        
+    
+    
+            var marker_d7fe7fa07a3661988ee6ab122e1711c4 = L.marker(
+                [10.662933, 77.010601],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_3160aa896c17b4ddfcae5d4dd9087ec9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d7fe7fa07a3661988ee6ab122e1711c4.setIcon(icon_3160aa896c17b4ddfcae5d4dd9087ec9);
+        
+    
+        var popup_6b03e3b83a461bb99cf0b99ba09ff580 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_032d470e30fee5f25dcaa64ec2d2b682 = $(`<div id="html_032d470e30fee5f25dcaa64ec2d2b682" style="width: 100.0%; height: 100.0%;"><h3><center>Sakthi Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_6b03e3b83a461bb99cf0b99ba09ff580.setContent(html_032d470e30fee5f25dcaa64ec2d2b682);
+            
+        
+
+        marker_d7fe7fa07a3661988ee6ab122e1711c4.bindPopup(popup_6b03e3b83a461bb99cf0b99ba09ff580)
+        ;
+
+        
+    
+    
+            var marker_9b7a4e37e4e435ce362f88ce5af363a4 = L.marker(
+                [10.662759, 77.01228],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_37f7b18bd67ecce053fe9a1ef30ccdb9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9b7a4e37e4e435ce362f88ce5af363a4.setIcon(icon_37f7b18bd67ecce053fe9a1ef30ccdb9);
+        
+    
+        var popup_6fe0cbe1b4ca7ba7aa736a916ad96f8b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1a27d2a3a970797f5b6059f77c6d0a72 = $(`<div id="html_1a27d2a3a970797f5b6059f77c6d0a72" style="width: 100.0%; height: 100.0%;"><h3><center>Surya Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_6fe0cbe1b4ca7ba7aa736a916ad96f8b.setContent(html_1a27d2a3a970797f5b6059f77c6d0a72);
+            
+        
+
+        marker_9b7a4e37e4e435ce362f88ce5af363a4.bindPopup(popup_6fe0cbe1b4ca7ba7aa736a916ad96f8b)
+        ;
+
+        
+    
+    
+            var marker_5e7a901e35d0ec198693dcd013d6cdb8 = L.marker(
+                [10.662295, 77.012529],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_f21b6d7c2326eb8f00980e4f58c65f8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5e7a901e35d0ec198693dcd013d6cdb8.setIcon(icon_f21b6d7c2326eb8f00980e4f58c65f8d);
+        
+    
+        var popup_2fd02e82d5b09088e2c1ff646f868ba0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_af6705755c263f85aa348b0562867b5f = $(`<div id="html_af6705755c263f85aa348b0562867b5f" style="width: 100.0%; height: 100.0%;"><h3><center>Ar Ortho Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_2fd02e82d5b09088e2c1ff646f868ba0.setContent(html_af6705755c263f85aa348b0562867b5f);
+            
+        
+
+        marker_5e7a901e35d0ec198693dcd013d6cdb8.bindPopup(popup_2fd02e82d5b09088e2c1ff646f868ba0)
+        ;
+
+        
+    
+    
+            var marker_5b86c939b722b9f4ec50a77925151fdb = L.marker(
+                [10.662549, 77.012991],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_db9abad61912a3fa1fbaad6409b3e696 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5b86c939b722b9f4ec50a77925151fdb.setIcon(icon_db9abad61912a3fa1fbaad6409b3e696);
+        
+    
+        var popup_ea5fa69024042f60566788b1e8609798 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7fa8982d294fea8a6eb7d3abe522a8bc = $(`<div id="html_7fa8982d294fea8a6eb7d3abe522a8bc" style="width: 100.0%; height: 100.0%;"><h3><center>Arun Hospital - Multi-Speciality Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_ea5fa69024042f60566788b1e8609798.setContent(html_7fa8982d294fea8a6eb7d3abe522a8bc);
+            
+        
+
+        marker_5b86c939b722b9f4ec50a77925151fdb.bindPopup(popup_ea5fa69024042f60566788b1e8609798)
+        ;
+
+        
+    
+    
+            var marker_c8de19b531e9c2c77b7f7ce51d37ebd8 = L.marker(
+                [10.663202, 77.015002],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_e838ce1e2eb419e6eabf52002c0a19a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c8de19b531e9c2c77b7f7ce51d37ebd8.setIcon(icon_e838ce1e2eb419e6eabf52002c0a19a8);
+        
+    
+        var popup_9d0ba0e1d8c9d19ecd7d308c77fd4a64 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5fb4485743267e6ab81ef976683cd4c4 = $(`<div id="html_5fb4485743267e6ab81ef976683cd4c4" style="width: 100.0%; height: 100.0%;"><h3><center>Shanthi Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_9d0ba0e1d8c9d19ecd7d308c77fd4a64.setContent(html_5fb4485743267e6ab81ef976683cd4c4);
+            
+        
+
+        marker_c8de19b531e9c2c77b7f7ce51d37ebd8.bindPopup(popup_9d0ba0e1d8c9d19ecd7d308c77fd4a64)
+        ;
+
+        
+    
+    
+            var marker_e2501e6db24af9bdb19a657abba0b4ac = L.marker(
+                [10.663307, 77.010094],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_5f509d34d8608c9e5487bdac44872bc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e2501e6db24af9bdb19a657abba0b4ac.setIcon(icon_5f509d34d8608c9e5487bdac44872bc9);
+        
+    
+        var popup_f683c8b0dffb99211b0c3b8780d41ab0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_85dfdc449edbf535677a128563309031 = $(`<div id="html_85dfdc449edbf535677a128563309031" style="width: 100.0%; height: 100.0%;"><h3><center>Siva Meds Multispeciality Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_f683c8b0dffb99211b0c3b8780d41ab0.setContent(html_85dfdc449edbf535677a128563309031);
+            
+        
+
+        marker_e2501e6db24af9bdb19a657abba0b4ac.bindPopup(popup_f683c8b0dffb99211b0c3b8780d41ab0)
+        ;
+
+        
+    
+    
+            var marker_0302b5c74f7eac543339329ea253a880 = L.marker(
+                [10.664198, 77.010357],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_35808b0c551bf10e1fb2de662095d6ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0302b5c74f7eac543339329ea253a880.setIcon(icon_35808b0c551bf10e1fb2de662095d6ae);
+        
+    
+        var popup_3bfc38bc41451a933b4db4e6604f824a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_776955bfc8124cb4509dc1b03c1e36e0 = $(`<div id="html_776955bfc8124cb4509dc1b03c1e36e0" style="width: 100.0%; height: 100.0%;"><h3><center>Pills Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_3bfc38bc41451a933b4db4e6604f824a.setContent(html_776955bfc8124cb4509dc1b03c1e36e0);
+            
+        
+
+        marker_0302b5c74f7eac543339329ea253a880.bindPopup(popup_3bfc38bc41451a933b4db4e6604f824a)
+        ;
+
+        
+    
+    
+            var marker_7a39a86d6d1a5f457c7af76efa7b4437 = L.marker(
+                [10.674253, 77.008098],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_c50bea22e30f0d074a9a60e2414f55b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7a39a86d6d1a5f457c7af76efa7b4437.setIcon(icon_c50bea22e30f0d074a9a60e2414f55b2);
+        
+    
+        var popup_6088669dd3b6d0412d2e2bd2e3a4b1b7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_57629ad440a007078aa2af2de1cd6baa = $(`<div id="html_57629ad440a007078aa2af2de1cd6baa" style="width: 100.0%; height: 100.0%;"><h3><center>The Pollachi Cardiac Center</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_6088669dd3b6d0412d2e2bd2e3a4b1b7.setContent(html_57629ad440a007078aa2af2de1cd6baa);
+            
+        
+
+        marker_7a39a86d6d1a5f457c7af76efa7b4437.bindPopup(popup_6088669dd3b6d0412d2e2bd2e3a4b1b7)
+        ;
+
+        
+    
+    
+            var marker_b0ed8a250b0f536e91c71bc1b93aadaa = L.marker(
+                [10.659502, 77.000567],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_3834a9c0dab1c5adef1b8802ee740507 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b0ed8a250b0f536e91c71bc1b93aadaa.setIcon(icon_3834a9c0dab1c5adef1b8802ee740507);
+        
+    
+        var popup_01f569f1d075fbf4f9625c09a049f791 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fa20e39edb787d5bcf7ac989cad49236 = $(`<div id="html_fa20e39edb787d5bcf7ac989cad49236" style="width: 100.0%; height: 100.0%;"><h3><center>SN Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_01f569f1d075fbf4f9625c09a049f791.setContent(html_fa20e39edb787d5bcf7ac989cad49236);
+            
+        
+
+        marker_b0ed8a250b0f536e91c71bc1b93aadaa.bindPopup(popup_01f569f1d075fbf4f9625c09a049f791)
+        ;
+
+        
+    
+    
+            var marker_1ad26e211ac012e2ce3cb7eceace47bb = L.marker(
+                [10.65948, 77.000535],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_180d6eb4f8e832814a5f2f5289cf19db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1ad26e211ac012e2ce3cb7eceace47bb.setIcon(icon_180d6eb4f8e832814a5f2f5289cf19db);
+        
+    
+        var popup_41c88ca16901f1b37c8e7ec3c04584d6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8bb09997f26523d605f12771e1225b52 = $(`<div id="html_8bb09997f26523d605f12771e1225b52" style="width: 100.0%; height: 100.0%;"><h3><center>JP Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_41c88ca16901f1b37c8e7ec3c04584d6.setContent(html_8bb09997f26523d605f12771e1225b52);
+            
+        
+
+        marker_1ad26e211ac012e2ce3cb7eceace47bb.bindPopup(popup_41c88ca16901f1b37c8e7ec3c04584d6)
+        ;
+
+        
+    
+    
+            var marker_99a013cb0fdacb43752a9ea732b03e5e = L.marker(
+                [10.658091, 77.009836],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_344c6f7396958e3721a997fb01e873a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_99a013cb0fdacb43752a9ea732b03e5e.setIcon(icon_344c6f7396958e3721a997fb01e873a7);
+        
+    
+        var popup_86acfff44ddf540e1ead2dcaa22b0b01 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bd4ecc12a4cbdeff5bb4df2d74f0599b = $(`<div id="html_bd4ecc12a4cbdeff5bb4df2d74f0599b" style="width: 100.0%; height: 100.0%;"><h3><center>Government Head Quarters Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_86acfff44ddf540e1ead2dcaa22b0b01.setContent(html_bd4ecc12a4cbdeff5bb4df2d74f0599b);
+            
+        
+
+        marker_99a013cb0fdacb43752a9ea732b03e5e.bindPopup(popup_86acfff44ddf540e1ead2dcaa22b0b01)
+        ;
+
+        
+    
+    
+            var marker_f3606f1e122d6918a261bd968dae3d2f = L.marker(
+                [10.66277, 76.99958],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_99c543e2deb36d5f7dbdb9c5bcbdb647 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f3606f1e122d6918a261bd968dae3d2f.setIcon(icon_99c543e2deb36d5f7dbdb9c5bcbdb647);
+        
+    
+        var popup_4653bd5a369f9c73364b3310a8e44da8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c4a0af21e18dce37a3ff929f633b7d73 = $(`<div id="html_c4a0af21e18dce37a3ff929f633b7d73" style="width: 100.0%; height: 100.0%;"><h3><center>Mcv Memorial Ent Trust Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_4653bd5a369f9c73364b3310a8e44da8.setContent(html_c4a0af21e18dce37a3ff929f633b7d73);
+            
+        
+
+        marker_f3606f1e122d6918a261bd968dae3d2f.bindPopup(popup_4653bd5a369f9c73364b3310a8e44da8)
+        ;
+
+        
+    
+    
+            var marker_7954f63b8f569182537b7c2e7c8d158c = L.marker(
+                [10.657625, 77.011446],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_d8338b0150b1a8b3a620d71354650ec7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7954f63b8f569182537b7c2e7c8d158c.setIcon(icon_d8338b0150b1a8b3a620d71354650ec7);
+        
+    
+        var popup_5b55d24f9fafd992e77a6bffe0658417 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a52d75badd6aa6ca74c532fbbc636cc5 = $(`<div id="html_a52d75badd6aa6ca74c532fbbc636cc5" style="width: 100.0%; height: 100.0%;"><h3><center>Pkd Nursing Home</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_5b55d24f9fafd992e77a6bffe0658417.setContent(html_a52d75badd6aa6ca74c532fbbc636cc5);
+            
+        
+
+        marker_7954f63b8f569182537b7c2e7c8d158c.bindPopup(popup_5b55d24f9fafd992e77a6bffe0658417)
+        ;
+
+        
+    
+    
+            var marker_a4bb430dc683b42651ed04089137b27d = L.marker(
+                [10.662422, 77.00304],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_d9ea6adf1834d9f535af8f455d91129c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a4bb430dc683b42651ed04089137b27d.setIcon(icon_d9ea6adf1834d9f535af8f455d91129c);
+        
+    
+        var popup_806683523ca0bb9ff49895b49d54769e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_295101a39a962c43e503125e5b6a2389 = $(`<div id="html_295101a39a962c43e503125e5b6a2389" style="width: 100.0%; height: 100.0%;"><h3><center>AVM Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_806683523ca0bb9ff49895b49d54769e.setContent(html_295101a39a962c43e503125e5b6a2389);
+            
+        
+
+        marker_a4bb430dc683b42651ed04089137b27d.bindPopup(popup_806683523ca0bb9ff49895b49d54769e)
+        ;
+
+        
+    
+    
+            var marker_0b7011fed6658ee38026dd1c28d930e8 = L.marker(
+                [10.662538, 77.003431],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_59ff859ae8686706bcb0753d301f9d75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0b7011fed6658ee38026dd1c28d930e8.setIcon(icon_59ff859ae8686706bcb0753d301f9d75);
+        
+    
+        var popup_3a4d0442280de1fe5e4f3aa2d283714d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_abcfab2aef3f6432c888ec12e88d4787 = $(`<div id="html_abcfab2aef3f6432c888ec12e88d4787" style="width: 100.0%; height: 100.0%;"><h3><center>K.M Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_3a4d0442280de1fe5e4f3aa2d283714d.setContent(html_abcfab2aef3f6432c888ec12e88d4787);
+            
+        
+
+        marker_0b7011fed6658ee38026dd1c28d930e8.bindPopup(popup_3a4d0442280de1fe5e4f3aa2d283714d)
+        ;
+
+        
+    
+    
+            var marker_27e8344f67a369a064f43a5a9057c67f = L.marker(
+                [10.664762, 77.004966],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_7d0a51d704bac9a28bfea1ffc49bdd51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_27e8344f67a369a064f43a5a9057c67f.setIcon(icon_7d0a51d704bac9a28bfea1ffc49bdd51);
+        
+    
+        var popup_37374526ceb87be55a351e008203e7df = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0b0e62335d3785037ec394c427671ea2 = $(`<div id="html_0b0e62335d3785037ec394c427671ea2" style="width: 100.0%; height: 100.0%;"><h3><center>MRS Hospital & Fertility centre</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_37374526ceb87be55a351e008203e7df.setContent(html_0b0e62335d3785037ec394c427671ea2);
+            
+        
+
+        marker_27e8344f67a369a064f43a5a9057c67f.bindPopup(popup_37374526ceb87be55a351e008203e7df)
+        ;
+
+        
+    
+    
+            var marker_262bad0797c87594497a20d1b9671d33 = L.marker(
+                [10.665069, 77.005867],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_3a86c5e5ea6f9274a410330e0a0ca82e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_262bad0797c87594497a20d1b9671d33.setIcon(icon_3a86c5e5ea6f9274a410330e0a0ca82e);
+        
+    
+        var popup_97b25b0675238935c4ae6ea1477c3fe2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3595ce4173c7d5db1692eff12c653663 = $(`<div id="html_3595ce4173c7d5db1692eff12c653663" style="width: 100.0%; height: 100.0%;"><h3><center>Thirumalai Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_97b25b0675238935c4ae6ea1477c3fe2.setContent(html_3595ce4173c7d5db1692eff12c653663);
+            
+        
+
+        marker_262bad0797c87594497a20d1b9671d33.bindPopup(popup_97b25b0675238935c4ae6ea1477c3fe2)
+        ;
+
+        
+    
+    
+            var marker_daf0a60e4d5203340fd820de8c9f0184 = L.marker(
+                [10.668211, 77.007036],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_8b0825a26798ab3c7ddcd20555c58e08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_daf0a60e4d5203340fd820de8c9f0184.setIcon(icon_8b0825a26798ab3c7ddcd20555c58e08);
+        
+    
+        var popup_db49383dcab02a8c68a8b1362d77cde3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3f7e0bfda58250995aaad4f35ecf69fc = $(`<div id="html_3f7e0bfda58250995aaad4f35ecf69fc" style="width: 100.0%; height: 100.0%;"><h3><center>Arathana Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_db49383dcab02a8c68a8b1362d77cde3.setContent(html_3f7e0bfda58250995aaad4f35ecf69fc);
+            
+        
+
+        marker_daf0a60e4d5203340fd820de8c9f0184.bindPopup(popup_db49383dcab02a8c68a8b1362d77cde3)
+        ;
+
+        
+    
+    
+            var marker_96f540c42c8d75cbdc1f691ea9893eeb = L.marker(
+                [10.670235, 77.007422],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_79b4b8593c859b89e83117d0f75e7c07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_96f540c42c8d75cbdc1f691ea9893eeb.setIcon(icon_79b4b8593c859b89e83117d0f75e7c07);
+        
+    
+        var popup_1cd5965aec22b626e7689e3182c5b350 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_165bed1b2580f62e13c248e06bca5b44 = $(`<div id="html_165bed1b2580f62e13c248e06bca5b44" style="width: 100.0%; height: 100.0%;"><h3><center>KGM HOSPITAL</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_1cd5965aec22b626e7689e3182c5b350.setContent(html_165bed1b2580f62e13c248e06bca5b44);
+            
+        
+
+        marker_96f540c42c8d75cbdc1f691ea9893eeb.bindPopup(popup_1cd5965aec22b626e7689e3182c5b350)
+        ;
+
+        
+    
+    
+            var marker_62debdb7aaac1d09860953cb19b09b51 = L.marker(
+                [10.662683, 77.009689],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_f6329c4fc609a2eb5cc3d05efe72e745 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_62debdb7aaac1d09860953cb19b09b51.setIcon(icon_f6329c4fc609a2eb5cc3d05efe72e745);
+        
+    
+        var popup_9faf1cddf83901281e283b1198a87ba8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f910f2e5ea528ad775acfa494132a1f2 = $(`<div id="html_f910f2e5ea528ad775acfa494132a1f2" style="width: 100.0%; height: 100.0%;"><h3><center>Prabhu Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_9faf1cddf83901281e283b1198a87ba8.setContent(html_f910f2e5ea528ad775acfa494132a1f2);
+            
+        
+
+        marker_62debdb7aaac1d09860953cb19b09b51.bindPopup(popup_9faf1cddf83901281e283b1198a87ba8)
+        ;
+
+        
+    
+    
+            var marker_65f180b06d5140ad29e60b883500525f = L.marker(
+                [10.662994, 77.010016],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_4775cf120b3018af2dfe441cf38ff926 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_65f180b06d5140ad29e60b883500525f.setIcon(icon_4775cf120b3018af2dfe441cf38ff926);
+        
+    
+        var popup_233c176f2db15fa586113f4d99c9ccb0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_71347450ae92e1b6f62379c5597fb352 = $(`<div id="html_71347450ae92e1b6f62379c5597fb352" style="width: 100.0%; height: 100.0%;"><h3><center>Kowsalya Medical Centre</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_233c176f2db15fa586113f4d99c9ccb0.setContent(html_71347450ae92e1b6f62379c5597fb352);
+            
+        
+
+        marker_65f180b06d5140ad29e60b883500525f.bindPopup(popup_233c176f2db15fa586113f4d99c9ccb0)
+        ;
+
+        
+    
+    
+            var marker_be5fc1f4f701cc5614c304b18d1a494c = L.marker(
+                [10.662933, 77.010601],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_bdc9bd209a4bf92348018a36f29b4195 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_be5fc1f4f701cc5614c304b18d1a494c.setIcon(icon_bdc9bd209a4bf92348018a36f29b4195);
+        
+    
+        var popup_d36b79a8995120ee83358de90adf2729 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e3d1128e2bc2be206ae1a42422821790 = $(`<div id="html_e3d1128e2bc2be206ae1a42422821790" style="width: 100.0%; height: 100.0%;"><h3><center>Sakthi Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_d36b79a8995120ee83358de90adf2729.setContent(html_e3d1128e2bc2be206ae1a42422821790);
+            
+        
+
+        marker_be5fc1f4f701cc5614c304b18d1a494c.bindPopup(popup_d36b79a8995120ee83358de90adf2729)
+        ;
+
+        
+    
+    
+            var marker_bdc1afd687fabd1aa8325b8ef74ca85e = L.marker(
+                [10.662759, 77.01228],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_984db6b824d52570b3a6dfd286704407 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bdc1afd687fabd1aa8325b8ef74ca85e.setIcon(icon_984db6b824d52570b3a6dfd286704407);
+        
+    
+        var popup_63008262fa1ad9ef05cc0a96e10dfc89 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3109036a257552d76bcbf583e1dd889a = $(`<div id="html_3109036a257552d76bcbf583e1dd889a" style="width: 100.0%; height: 100.0%;"><h3><center>Surya Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_63008262fa1ad9ef05cc0a96e10dfc89.setContent(html_3109036a257552d76bcbf583e1dd889a);
+            
+        
+
+        marker_bdc1afd687fabd1aa8325b8ef74ca85e.bindPopup(popup_63008262fa1ad9ef05cc0a96e10dfc89)
+        ;
+
+        
+    
+    
+            var marker_90991898d0eca388410dedd10258d706 = L.marker(
+                [10.662295, 77.012529],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_0a080e125ffac458c3675f122c518178 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_90991898d0eca388410dedd10258d706.setIcon(icon_0a080e125ffac458c3675f122c518178);
+        
+    
+        var popup_eef4f7ac11b7c6be5e3801a6a286243f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6fce76849131946f6d218f6939392f38 = $(`<div id="html_6fce76849131946f6d218f6939392f38" style="width: 100.0%; height: 100.0%;"><h3><center>Ar Ortho Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_eef4f7ac11b7c6be5e3801a6a286243f.setContent(html_6fce76849131946f6d218f6939392f38);
+            
+        
+
+        marker_90991898d0eca388410dedd10258d706.bindPopup(popup_eef4f7ac11b7c6be5e3801a6a286243f)
+        ;
+
+        
+    
+    
+            var marker_6f0fc6cbdda8c2cdc4f7f1e2ab183530 = L.marker(
+                [10.662549, 77.012991],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_0380efb44931b050694b37972e23c729 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6f0fc6cbdda8c2cdc4f7f1e2ab183530.setIcon(icon_0380efb44931b050694b37972e23c729);
+        
+    
+        var popup_623ac2b8528b7dfd3085394b835ace8f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3022aafd300e97ba52b046068a3e1b9d = $(`<div id="html_3022aafd300e97ba52b046068a3e1b9d" style="width: 100.0%; height: 100.0%;"><h3><center>Arun Hospital - Multi-Speciality Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_623ac2b8528b7dfd3085394b835ace8f.setContent(html_3022aafd300e97ba52b046068a3e1b9d);
+            
+        
+
+        marker_6f0fc6cbdda8c2cdc4f7f1e2ab183530.bindPopup(popup_623ac2b8528b7dfd3085394b835ace8f)
+        ;
+
+        
+    
+    
+            var marker_3dffca2ca48afaae4fa15887f9bbdab5 = L.marker(
+                [10.663202, 77.015002],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_a8e21683d1e980bbd84cbad7ec62758a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3dffca2ca48afaae4fa15887f9bbdab5.setIcon(icon_a8e21683d1e980bbd84cbad7ec62758a);
+        
+    
+        var popup_8258b9e8a70ea7b03684315bbf490995 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bcb267e62f1816f3122171614da37ba6 = $(`<div id="html_bcb267e62f1816f3122171614da37ba6" style="width: 100.0%; height: 100.0%;"><h3><center>Shanthi Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_8258b9e8a70ea7b03684315bbf490995.setContent(html_bcb267e62f1816f3122171614da37ba6);
+            
+        
+
+        marker_3dffca2ca48afaae4fa15887f9bbdab5.bindPopup(popup_8258b9e8a70ea7b03684315bbf490995)
+        ;
+
+        
+    
+    
+            var marker_4dab6234554a985a5bc4df641361291a = L.marker(
+                [10.663307, 77.010094],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_b22bc5947c81975e786873f29798d30f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4dab6234554a985a5bc4df641361291a.setIcon(icon_b22bc5947c81975e786873f29798d30f);
+        
+    
+        var popup_573b5a9f53809d6f7aa72bc5cff9d715 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4d2831f9c5c6bbd8bd00b0051c5131fc = $(`<div id="html_4d2831f9c5c6bbd8bd00b0051c5131fc" style="width: 100.0%; height: 100.0%;"><h3><center>Siva Meds Multispeciality Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_573b5a9f53809d6f7aa72bc5cff9d715.setContent(html_4d2831f9c5c6bbd8bd00b0051c5131fc);
+            
+        
+
+        marker_4dab6234554a985a5bc4df641361291a.bindPopup(popup_573b5a9f53809d6f7aa72bc5cff9d715)
+        ;
+
+        
+    
+    
+            var marker_3a7a8c3918191edee7073feabf98c35e = L.marker(
+                [10.664198, 77.010357],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_2061aaffc9b23201eca0ae13d0817b29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3a7a8c3918191edee7073feabf98c35e.setIcon(icon_2061aaffc9b23201eca0ae13d0817b29);
+        
+    
+        var popup_a0538761ac186adca852e2053c091b8e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8da6cd59bde32ae5bce89f186d0096ee = $(`<div id="html_8da6cd59bde32ae5bce89f186d0096ee" style="width: 100.0%; height: 100.0%;"><h3><center>Pills Hospital</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_a0538761ac186adca852e2053c091b8e.setContent(html_8da6cd59bde32ae5bce89f186d0096ee);
+            
+        
+
+        marker_3a7a8c3918191edee7073feabf98c35e.bindPopup(popup_a0538761ac186adca852e2053c091b8e)
+        ;
+
+        
+    
+    
+            var marker_0379c5beca159c88b922f06fa5e8ed96 = L.marker(
+                [10.674253, 77.008098],
+                {}
+            ).addTo(feature_group_067d87d3aaa62fc0e598277fdddb1293);
+        
+    
+            var icon_cb69b1bf6e21125ef61d2191f7ce567e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0379c5beca159c88b922f06fa5e8ed96.setIcon(icon_cb69b1bf6e21125ef61d2191f7ce567e);
+        
+    
+        var popup_34c4ad7a65fce6146db50dad93ff99eb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8513e8815b069167a255725b32cabfe6 = $(`<div id="html_8513e8815b069167a255725b32cabfe6" style="width: 100.0%; height: 100.0%;"><h3><center>The Pollachi Cardiac Center</center></h3><center><img src='hospital.jpg' alt='Hospital' width='100' height='60'></center></div>`)[0];
+                popup_34c4ad7a65fce6146db50dad93ff99eb.setContent(html_8513e8815b069167a255725b32cabfe6);
+            
+        
+
+        marker_0379c5beca159c88b922f06fa5e8ed96.bindPopup(popup_34c4ad7a65fce6146db50dad93ff99eb)
+        ;
+
+        
+    
+    
+            feature_group_067d87d3aaa62fc0e598277fdddb1293.addTo(map_752d1438c43faad51ca81aef9f410184);
+        
+    
+            var feature_group_6baebaa7ca440ab409d3c127da8aa4c0 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_72f457fb385ed305dde949022b10a815 = L.marker(
+                [10.66, 77.005],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_71c41bf216f5a1dbd20ecccc115635d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_72f457fb385ed305dde949022b10a815.setIcon(icon_71c41bf216f5a1dbd20ecccc115635d6);
+        
+    
+        var popup_8676c23b4643fe27b8bc08dcfa608fee = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fe1ee1090637702b3dc1df600e2ede31 = $(`<div id="html_fe1ee1090637702b3dc1df600e2ede31" style="width: 100.0%; height: 100.0%;"><h3><center>A</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_8676c23b4643fe27b8bc08dcfa608fee.setContent(html_fe1ee1090637702b3dc1df600e2ede31);
+            
+        
+
+        marker_72f457fb385ed305dde949022b10a815.bindPopup(popup_8676c23b4643fe27b8bc08dcfa608fee)
+        ;
+
+        
+    
+    
+            var marker_869a7845c1b6fbce1a5ec8c5b8190c6d = L.marker(
+                [10.66327, 77.01779],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_9c43b04011c327fa4323663ed5b5fba2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_869a7845c1b6fbce1a5ec8c5b8190c6d.setIcon(icon_9c43b04011c327fa4323663ed5b5fba2);
+        
+    
+        var popup_a03388137eb1624521b3a0050363750b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_95950fb3eb6065d1f1a3123f62948843 = $(`<div id="html_95950fb3eb6065d1f1a3123f62948843" style="width: 100.0%; height: 100.0%;"><h3><center>B</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_a03388137eb1624521b3a0050363750b.setContent(html_95950fb3eb6065d1f1a3123f62948843);
+            
+        
+
+        marker_869a7845c1b6fbce1a5ec8c5b8190c6d.bindPopup(popup_a03388137eb1624521b3a0050363750b)
+        ;
+
+        
+    
+    
+            var marker_9fb2993266f13110fc7b7630525117d7 = L.marker(
+                [10.667, 77.0125],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_be22d585abba39c15eff8b1533775c02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_9fb2993266f13110fc7b7630525117d7.setIcon(icon_be22d585abba39c15eff8b1533775c02);
+        
+    
+        var popup_0a2ac3ad1c42c76f097f5c92553de711 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ca6f4b5f89b96e330a88e5ec2d870cd3 = $(`<div id="html_ca6f4b5f89b96e330a88e5ec2d870cd3" style="width: 100.0%; height: 100.0%;"><h3><center>C</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_0a2ac3ad1c42c76f097f5c92553de711.setContent(html_ca6f4b5f89b96e330a88e5ec2d870cd3);
+            
+        
+
+        marker_9fb2993266f13110fc7b7630525117d7.bindPopup(popup_0a2ac3ad1c42c76f097f5c92553de711)
+        ;
+
+        
+    
+    
+            var marker_3cec34cd7daf9933fa30a3dd50677e3a = L.marker(
+                [10.6685, 77.007],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_b7efaea57b92b192e8f414e6673f3394 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_3cec34cd7daf9933fa30a3dd50677e3a.setIcon(icon_b7efaea57b92b192e8f414e6673f3394);
+        
+    
+        var popup_63b92989093ec3503056903aad47cec3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d5d2d42e71ca32f4fc9b104f194fd53f = $(`<div id="html_d5d2d42e71ca32f4fc9b104f194fd53f" style="width: 100.0%; height: 100.0%;"><h3><center>D</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_63b92989093ec3503056903aad47cec3.setContent(html_d5d2d42e71ca32f4fc9b104f194fd53f);
+            
+        
+
+        marker_3cec34cd7daf9933fa30a3dd50677e3a.bindPopup(popup_63b92989093ec3503056903aad47cec3)
+        ;
+
+        
+    
+    
+            var marker_ac82329b7dd7aa55e10757a063164a7e = L.marker(
+                [10.6555, 77.01],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_bdc35d43ad341b9c4de415d2fc910d1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_ac82329b7dd7aa55e10757a063164a7e.setIcon(icon_bdc35d43ad341b9c4de415d2fc910d1a);
+        
+    
+        var popup_eee4c35250b00a98ef6abd6ea344ce36 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_46697a803418b047ed1ced75ac9f3305 = $(`<div id="html_46697a803418b047ed1ced75ac9f3305" style="width: 100.0%; height: 100.0%;"><h3><center>E</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_eee4c35250b00a98ef6abd6ea344ce36.setContent(html_46697a803418b047ed1ced75ac9f3305);
+            
+        
+
+        marker_ac82329b7dd7aa55e10757a063164a7e.bindPopup(popup_eee4c35250b00a98ef6abd6ea344ce36)
+        ;
+
+        
+    
+    
+            var marker_f86130fe5716c29781b8485251f1055b = L.marker(
+                [10.6615, 77.008],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_4ae4e97a6d789dbd89144922cd653bb6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_f86130fe5716c29781b8485251f1055b.setIcon(icon_4ae4e97a6d789dbd89144922cd653bb6);
+        
+    
+        var popup_6712e4b9979413171742d9d9a139571e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_12854c8377d11123071859c51b0e0085 = $(`<div id="html_12854c8377d11123071859c51b0e0085" style="width: 100.0%; height: 100.0%;"><h3><center>F</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_6712e4b9979413171742d9d9a139571e.setContent(html_12854c8377d11123071859c51b0e0085);
+            
+        
+
+        marker_f86130fe5716c29781b8485251f1055b.bindPopup(popup_6712e4b9979413171742d9d9a139571e)
+        ;
+
+        
+    
+    
+            var marker_0cb2c5b8c1063204e5fd6a760b4ae7ed = L.marker(
+                [10.66, 77.005],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_765e1c2fbdd90b7ea51da8c2c4d9ca08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_0cb2c5b8c1063204e5fd6a760b4ae7ed.setIcon(icon_765e1c2fbdd90b7ea51da8c2c4d9ca08);
+        
+    
+        var popup_f8bd6fd4103810b38d8d0613037c0626 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dc455d7d66df3ff9955024090333db67 = $(`<div id="html_dc455d7d66df3ff9955024090333db67" style="width: 100.0%; height: 100.0%;"><h3><center>A</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_f8bd6fd4103810b38d8d0613037c0626.setContent(html_dc455d7d66df3ff9955024090333db67);
+            
+        
+
+        marker_0cb2c5b8c1063204e5fd6a760b4ae7ed.bindPopup(popup_f8bd6fd4103810b38d8d0613037c0626)
+        ;
+
+        
+    
+    
+            var marker_613fb629dc3b7a6e3f1738744a45f9e1 = L.marker(
+                [10.66327, 77.01779],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_cbd974123089700bd9f906ade76c7206 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_613fb629dc3b7a6e3f1738744a45f9e1.setIcon(icon_cbd974123089700bd9f906ade76c7206);
+        
+    
+        var popup_2554356d3e8e3d615d9ac4f215121596 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dcca2d38cd53a3f4bf6584763877f7d8 = $(`<div id="html_dcca2d38cd53a3f4bf6584763877f7d8" style="width: 100.0%; height: 100.0%;"><h3><center>B</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_2554356d3e8e3d615d9ac4f215121596.setContent(html_dcca2d38cd53a3f4bf6584763877f7d8);
+            
+        
+
+        marker_613fb629dc3b7a6e3f1738744a45f9e1.bindPopup(popup_2554356d3e8e3d615d9ac4f215121596)
+        ;
+
+        
+    
+    
+            var marker_6998ef6bffa55e2921e7f27232bb2177 = L.marker(
+                [10.667, 77.0125],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_6e37895f24455827973e0df79b3bb0fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_6998ef6bffa55e2921e7f27232bb2177.setIcon(icon_6e37895f24455827973e0df79b3bb0fd);
+        
+    
+        var popup_327265a589b696aec74036ecf9d95e42 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_61ee00c63597cebb5cd74155f4488120 = $(`<div id="html_61ee00c63597cebb5cd74155f4488120" style="width: 100.0%; height: 100.0%;"><h3><center>C</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_327265a589b696aec74036ecf9d95e42.setContent(html_61ee00c63597cebb5cd74155f4488120);
+            
+        
+
+        marker_6998ef6bffa55e2921e7f27232bb2177.bindPopup(popup_327265a589b696aec74036ecf9d95e42)
+        ;
+
+        
+    
+    
+            var marker_6b6d63d833859b8cbb284d05107d5c90 = L.marker(
+                [10.6685, 77.007],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_26580031f808eb3a4b77642ab634c8b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_6b6d63d833859b8cbb284d05107d5c90.setIcon(icon_26580031f808eb3a4b77642ab634c8b3);
+        
+    
+        var popup_f35033dee144571f2dffd10df79c1204 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1795c5eebb074949a2593c26f37bd764 = $(`<div id="html_1795c5eebb074949a2593c26f37bd764" style="width: 100.0%; height: 100.0%;"><h3><center>D</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_f35033dee144571f2dffd10df79c1204.setContent(html_1795c5eebb074949a2593c26f37bd764);
+            
+        
+
+        marker_6b6d63d833859b8cbb284d05107d5c90.bindPopup(popup_f35033dee144571f2dffd10df79c1204)
+        ;
+
+        
+    
+    
+            var marker_ecd2a56f03c2a55c3c76567a8a61f150 = L.marker(
+                [10.6555, 77.01],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_e7c1027779cf9d0235ee444b844a13e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_ecd2a56f03c2a55c3c76567a8a61f150.setIcon(icon_e7c1027779cf9d0235ee444b844a13e0);
+        
+    
+        var popup_1a8e3a950605c8538a8e610106d458c1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_10d9766e4dc045726bd1c3a9fe73aefb = $(`<div id="html_10d9766e4dc045726bd1c3a9fe73aefb" style="width: 100.0%; height: 100.0%;"><h3><center>E</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_1a8e3a950605c8538a8e610106d458c1.setContent(html_10d9766e4dc045726bd1c3a9fe73aefb);
+            
+        
+
+        marker_ecd2a56f03c2a55c3c76567a8a61f150.bindPopup(popup_1a8e3a950605c8538a8e610106d458c1)
+        ;
+
+        
+    
+    
+            var marker_e528a8cd934fb831901a71d3953e5374 = L.marker(
+                [10.6615, 77.008],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_4005d8a44480e4c5ef4f2ceb948cc1cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_e528a8cd934fb831901a71d3953e5374.setIcon(icon_4005d8a44480e4c5ef4f2ceb948cc1cd);
+        
+    
+        var popup_a40e9b3bea7bab6ef592656f803383fd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1394521a7f171791c76f317bbeebf3c4 = $(`<div id="html_1394521a7f171791c76f317bbeebf3c4" style="width: 100.0%; height: 100.0%;"><h3><center>F</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_a40e9b3bea7bab6ef592656f803383fd.setContent(html_1394521a7f171791c76f317bbeebf3c4);
+            
+        
+
+        marker_e528a8cd934fb831901a71d3953e5374.bindPopup(popup_a40e9b3bea7bab6ef592656f803383fd)
+        ;
+
+        
+    
+    
+            var marker_96a561ec7f235fb05324484d7281b867 = L.marker(
+                [10.66, 77.005],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_ef484cd108faf46c0d35326c2f4e0c91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_96a561ec7f235fb05324484d7281b867.setIcon(icon_ef484cd108faf46c0d35326c2f4e0c91);
+        
+    
+        var popup_7c7b0b76fbcbac9b6a175b4941082e14 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_df5811be9b6e9eb04c2fdc077e381928 = $(`<div id="html_df5811be9b6e9eb04c2fdc077e381928" style="width: 100.0%; height: 100.0%;"><h3><center>A</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_7c7b0b76fbcbac9b6a175b4941082e14.setContent(html_df5811be9b6e9eb04c2fdc077e381928);
+            
+        
+
+        marker_96a561ec7f235fb05324484d7281b867.bindPopup(popup_7c7b0b76fbcbac9b6a175b4941082e14)
+        ;
+
+        
+    
+    
+            var marker_03cadf75f543f06d1e554f6db87472b9 = L.marker(
+                [10.66327, 77.01779],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_5a2c7eeb8ee08871ea9fb5dbac846156 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_03cadf75f543f06d1e554f6db87472b9.setIcon(icon_5a2c7eeb8ee08871ea9fb5dbac846156);
+        
+    
+        var popup_7abbdd00e37c38a57dc816f31ea0f3a4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_82103d59e450e2fb4d87fbcd5f224bbc = $(`<div id="html_82103d59e450e2fb4d87fbcd5f224bbc" style="width: 100.0%; height: 100.0%;"><h3><center>B</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_7abbdd00e37c38a57dc816f31ea0f3a4.setContent(html_82103d59e450e2fb4d87fbcd5f224bbc);
+            
+        
+
+        marker_03cadf75f543f06d1e554f6db87472b9.bindPopup(popup_7abbdd00e37c38a57dc816f31ea0f3a4)
+        ;
+
+        
+    
+    
+            var marker_00205520fc171c8f4adfa07ab7a69ec3 = L.marker(
+                [10.667, 77.0125],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_9ac41fa37d144a1d7eed31559906e482 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_00205520fc171c8f4adfa07ab7a69ec3.setIcon(icon_9ac41fa37d144a1d7eed31559906e482);
+        
+    
+        var popup_6f42fdc05e608408b844b0fa32723cd3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b5c14e23c9c3942b1b9817fbd28facbb = $(`<div id="html_b5c14e23c9c3942b1b9817fbd28facbb" style="width: 100.0%; height: 100.0%;"><h3><center>C</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_6f42fdc05e608408b844b0fa32723cd3.setContent(html_b5c14e23c9c3942b1b9817fbd28facbb);
+            
+        
+
+        marker_00205520fc171c8f4adfa07ab7a69ec3.bindPopup(popup_6f42fdc05e608408b844b0fa32723cd3)
+        ;
+
+        
+    
+    
+            var marker_bf5615aebb48eabebea686fec52b0f18 = L.marker(
+                [10.6685, 77.007],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_a17b76b1cdf81324a1b506caf77444b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_bf5615aebb48eabebea686fec52b0f18.setIcon(icon_a17b76b1cdf81324a1b506caf77444b0);
+        
+    
+        var popup_21d865f52dfb4402aa22ccb8ef831664 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_221e96358551721750e55b61d2e9259f = $(`<div id="html_221e96358551721750e55b61d2e9259f" style="width: 100.0%; height: 100.0%;"><h3><center>D</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_21d865f52dfb4402aa22ccb8ef831664.setContent(html_221e96358551721750e55b61d2e9259f);
+            
+        
+
+        marker_bf5615aebb48eabebea686fec52b0f18.bindPopup(popup_21d865f52dfb4402aa22ccb8ef831664)
+        ;
+
+        
+    
+    
+            var marker_96cd55606e51dd917017e3a8a8084475 = L.marker(
+                [10.6555, 77.01],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_541690dd08c8f7ade3ea710d15bcbc1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_96cd55606e51dd917017e3a8a8084475.setIcon(icon_541690dd08c8f7ade3ea710d15bcbc1b);
+        
+    
+        var popup_e1bd628f998b55da3568107b1a869583 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b75b8ef2c52a866c01b19e6d82b00133 = $(`<div id="html_b75b8ef2c52a866c01b19e6d82b00133" style="width: 100.0%; height: 100.0%;"><h3><center>E</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_e1bd628f998b55da3568107b1a869583.setContent(html_b75b8ef2c52a866c01b19e6d82b00133);
+            
+        
+
+        marker_96cd55606e51dd917017e3a8a8084475.bindPopup(popup_e1bd628f998b55da3568107b1a869583)
+        ;
+
+        
+    
+    
+            var marker_056a2cb8c008de01c67ec96d9d6f365b = L.marker(
+                [10.6615, 77.008],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_455c1493c0f51e9e437cde4671b905d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_056a2cb8c008de01c67ec96d9d6f365b.setIcon(icon_455c1493c0f51e9e437cde4671b905d3);
+        
+    
+        var popup_45095f2c2daaea1c48bda298eefa9a83 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_66f3d64519e2f4ffe87097662bfaf82d = $(`<div id="html_66f3d64519e2f4ffe87097662bfaf82d" style="width: 100.0%; height: 100.0%;"><h3><center>F</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_45095f2c2daaea1c48bda298eefa9a83.setContent(html_66f3d64519e2f4ffe87097662bfaf82d);
+            
+        
+
+        marker_056a2cb8c008de01c67ec96d9d6f365b.bindPopup(popup_45095f2c2daaea1c48bda298eefa9a83)
+        ;
+
+        
+    
+    
+            var marker_f6d1657f354568697938586e3049f239 = L.marker(
+                [10.66, 77.005],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_1fe104e163f06b10fc332ece7d92d42e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_f6d1657f354568697938586e3049f239.setIcon(icon_1fe104e163f06b10fc332ece7d92d42e);
+        
+    
+        var popup_76fbe3c736ebf9cadabdfa200708d387 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_95b4fe48d0850915d2593dab1f6fd33b = $(`<div id="html_95b4fe48d0850915d2593dab1f6fd33b" style="width: 100.0%; height: 100.0%;"><h3><center>A</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_76fbe3c736ebf9cadabdfa200708d387.setContent(html_95b4fe48d0850915d2593dab1f6fd33b);
+            
+        
+
+        marker_f6d1657f354568697938586e3049f239.bindPopup(popup_76fbe3c736ebf9cadabdfa200708d387)
+        ;
+
+        
+    
+    
+            var marker_74e1145ebd8bfe60b1564e180a525ab1 = L.marker(
+                [10.66327, 77.01779],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_8c919ccb804b644b77ba4bb73be0e365 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_74e1145ebd8bfe60b1564e180a525ab1.setIcon(icon_8c919ccb804b644b77ba4bb73be0e365);
+        
+    
+        var popup_cf29682396bd2423e94ce2f48838e5b6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_19c90a23c071f867b38233ba1d08d5e2 = $(`<div id="html_19c90a23c071f867b38233ba1d08d5e2" style="width: 100.0%; height: 100.0%;"><h3><center>B</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_cf29682396bd2423e94ce2f48838e5b6.setContent(html_19c90a23c071f867b38233ba1d08d5e2);
+            
+        
+
+        marker_74e1145ebd8bfe60b1564e180a525ab1.bindPopup(popup_cf29682396bd2423e94ce2f48838e5b6)
+        ;
+
+        
+    
+    
+            var marker_9cdba6310ad226d854ff4a3772e150da = L.marker(
+                [10.667, 77.0125],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_c2f37b0f9c819db9d8b585bd82d927a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_9cdba6310ad226d854ff4a3772e150da.setIcon(icon_c2f37b0f9c819db9d8b585bd82d927a9);
+        
+    
+        var popup_41e59c049264137c4cc94c2173f82a93 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1ad4b1b32ad159d4cf6fe359b5eecec5 = $(`<div id="html_1ad4b1b32ad159d4cf6fe359b5eecec5" style="width: 100.0%; height: 100.0%;"><h3><center>C</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_41e59c049264137c4cc94c2173f82a93.setContent(html_1ad4b1b32ad159d4cf6fe359b5eecec5);
+            
+        
+
+        marker_9cdba6310ad226d854ff4a3772e150da.bindPopup(popup_41e59c049264137c4cc94c2173f82a93)
+        ;
+
+        
+    
+    
+            var marker_53a96105b3bba560a2f72ad8d08754d2 = L.marker(
+                [10.6685, 77.007],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_aecfce711c9060d6f3825e393c3b9e29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_53a96105b3bba560a2f72ad8d08754d2.setIcon(icon_aecfce711c9060d6f3825e393c3b9e29);
+        
+    
+        var popup_99992688a3cfc69b6e5faa66132d73db = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3b2172ebdc8d762a94c2c7db8c7d7462 = $(`<div id="html_3b2172ebdc8d762a94c2c7db8c7d7462" style="width: 100.0%; height: 100.0%;"><h3><center>D</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_99992688a3cfc69b6e5faa66132d73db.setContent(html_3b2172ebdc8d762a94c2c7db8c7d7462);
+            
+        
+
+        marker_53a96105b3bba560a2f72ad8d08754d2.bindPopup(popup_99992688a3cfc69b6e5faa66132d73db)
+        ;
+
+        
+    
+    
+            var marker_8a7b968d3b72a5382020b4a9ac15c98e = L.marker(
+                [10.6555, 77.01],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_bf3f41947d11070eef8ad6e079ee55db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_8a7b968d3b72a5382020b4a9ac15c98e.setIcon(icon_bf3f41947d11070eef8ad6e079ee55db);
+        
+    
+        var popup_9040be4810059e0a7475857b0d133cff = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_471af3fe47d8cd9772521f151876763a = $(`<div id="html_471af3fe47d8cd9772521f151876763a" style="width: 100.0%; height: 100.0%;"><h3><center>E</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_9040be4810059e0a7475857b0d133cff.setContent(html_471af3fe47d8cd9772521f151876763a);
+            
+        
+
+        marker_8a7b968d3b72a5382020b4a9ac15c98e.bindPopup(popup_9040be4810059e0a7475857b0d133cff)
+        ;
+
+        
+    
+    
+            var marker_ae8e26b8db8e14b8e0f73ff3e2efedd6 = L.marker(
+                [10.6615, 77.008],
+                {}
+            ).addTo(feature_group_6baebaa7ca440ab409d3c127da8aa4c0);
+        
+    
+            var icon_0df25820cc08d4d6e150495c71e5e9f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_ae8e26b8db8e14b8e0f73ff3e2efedd6.setIcon(icon_0df25820cc08d4d6e150495c71e5e9f8);
+        
+    
+        var popup_20cd969bdc8658fd561adad1758e8940 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_494226c4db29e1d165c418318813814c = $(`<div id="html_494226c4db29e1d165c418318813814c" style="width: 100.0%; height: 100.0%;"><h3><center>F</center></h3><center><img src='ambulance.jpg' alt='Ambulance' width='100' height='60'></center></div>`)[0];
+                popup_20cd969bdc8658fd561adad1758e8940.setContent(html_494226c4db29e1d165c418318813814c);
+            
+        
+
+        marker_ae8e26b8db8e14b8e0f73ff3e2efedd6.bindPopup(popup_20cd969bdc8658fd561adad1758e8940)
+        ;
+
+        
+    
+    
+            feature_group_6baebaa7ca440ab409d3c127da8aa4c0.addTo(map_752d1438c43faad51ca81aef9f410184);
+        
+    
+            var feature_group_d6d4995491d781be006ff62f91da3346 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_09b9c3a079a3bf4c3f14c48efd472e3b = L.marker(
+                [10.665, 77.0145],
+                {}
+            ).addTo(feature_group_d6d4995491d781be006ff62f91da3346);
+        
+    
+            var icon_25b9e777c06de520c593c8d27d967f07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_09b9c3a079a3bf4c3f14c48efd472e3b.setIcon(icon_25b9e777c06de520c593c8d27d967f07);
+        
+    
+        var popup_a1aab269044e46178bb2ae1007fd00f4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3fc4f80a9ede369aa3a4fd711a625d28 = $(`<div id="html_3fc4f80a9ede369aa3a4fd711a625d28" style="width: 100.0%; height: 100.0%;"><h4><center>Patient ID :108</h4></center><h5><center>Fire Accident</center></h5><center><img src='patient.jpg' alt='Patient' width='100' height='60'></center></div>`)[0];
+                popup_a1aab269044e46178bb2ae1007fd00f4.setContent(html_3fc4f80a9ede369aa3a4fd711a625d28);
+            
+        
+
+        marker_09b9c3a079a3bf4c3f14c48efd472e3b.bindPopup(popup_a1aab269044e46178bb2ae1007fd00f4)
+        ;
+
+        
+    
+    
+            var marker_9b97b32cdb54da3f85e5b586127c766a = L.marker(
+                [10.665, 77.0145],
+                {}
+            ).addTo(feature_group_d6d4995491d781be006ff62f91da3346);
+        
+    
+            var icon_2bd199fe01f25bf3195f817d6c9e711a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9b97b32cdb54da3f85e5b586127c766a.setIcon(icon_2bd199fe01f25bf3195f817d6c9e711a);
+        
+    
+        var popup_ecc994fd6fb458132aeef5d499acad56 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_20ee5566e108561690dea5b11cc5ed66 = $(`<div id="html_20ee5566e108561690dea5b11cc5ed66" style="width: 100.0%; height: 100.0%;"><h4><center>Patient ID :108</h4></center><h5><center>Fire Accident</center></h5><center><img src='patient.jpg' alt='Patient' width='100' height='60'></center></div>`)[0];
+                popup_ecc994fd6fb458132aeef5d499acad56.setContent(html_20ee5566e108561690dea5b11cc5ed66);
+            
+        
+
+        marker_9b97b32cdb54da3f85e5b586127c766a.bindPopup(popup_ecc994fd6fb458132aeef5d499acad56)
+        ;
+
+        
+    
+    
+            feature_group_d6d4995491d781be006ff62f91da3346.addTo(map_752d1438c43faad51ca81aef9f410184);
+        
+    
+            var feature_group_35500e20e5a6eea20eb668a4216e119a = L.featureGroup(
+                {}
+            );
+        
+    
+            var poly_line_7d36c0e75998dd05031571d0b0a3d743 = L.polyline(
+                [[10.665, 77.0145], [10.6648571, 77.0147122], [10.665473, 77.0126902], [10.665523, 77.0121445], [10.6660249, 77.0121734], [10.6665626, 77.0121856], [10.6666383, 77.0121873], [10.667, 77.0125]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_35500e20e5a6eea20eb668a4216e119a);
+        
+    
+            feature_group_35500e20e5a6eea20eb668a4216e119a.addTo(map_752d1438c43faad51ca81aef9f410184);
+        
+    
+            var feature_group_d7a0ac115721cf2e447e4300a95bf037 = L.featureGroup(
+                {}
+            );
+        
+    
+            var poly_line_cbf118102f61014c8c718c49e12efff6 = L.polyline(
+                [[10.665, 77.0145], [10.6648571, 77.0147122], [10.6647325, 77.0151211], [10.6643506, 77.015044], [10.6639499, 77.0149632], [10.6634858, 77.0148695], [10.663202, 77.015002]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_d7a0ac115721cf2e447e4300a95bf037);
+        
+    
+            feature_group_d7a0ac115721cf2e447e4300a95bf037.addTo(map_752d1438c43faad51ca81aef9f410184);
+        
+    
+            map_752d1438c43faad51ca81aef9f410184.fitBounds(
+                [[10.6645224, 77.0082095], [10.6708229, 77.0208333], [10.6536419, 77.0047728], [10.6537968, 77.021023]],
+                {}
+            );
+        
+    
+            map_752d1438c43faad51ca81aef9f410184.fitBounds(
+                [[10.6645224, 77.0082095], [10.6708229, 77.0208333], [10.6536419, 77.0047728], [10.6537968, 77.021023]],
+                {}
+            );
+        
+    
+            var layer_control_28335f462afea7d6142c1524733514c9_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_9eb843b85f5d07023960f6909d8ffec4,
+                    "CartoDB.DarkMatter" : tile_layer_cedd26385475701d6bcd5a8212cd1ae5,
+                    "Esri.WorldStreetMap" : tile_layer_b4a762e5edafcd171d4a31003d041c49,
+                },
+                overlays :  {
+                    "Hospital" : feature_group_067d87d3aaa62fc0e598277fdddb1293,
+                    "Ambulance" : feature_group_6baebaa7ca440ab409d3c127da8aa4c0,
+                    "Patient" : feature_group_d6d4995491d781be006ff62f91da3346,
+                    "Shortest path to Patient From Ambulance Station" : feature_group_35500e20e5a6eea20eb668a4216e119a,
+                    "Shortest path to HospitalFrom Patient" : feature_group_d7a0ac115721cf2e447e4300a95bf037,
+                },
+            };
+            let layer_control_28335f462afea7d6142c1524733514c9 = L.control.layers(
+                layer_control_28335f462afea7d6142c1524733514c9_layers.base_layers,
+                layer_control_28335f462afea7d6142c1524733514c9_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_752d1438c43faad51ca81aef9f410184);
+
+        
+</script>
+</html>
